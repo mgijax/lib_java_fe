@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!-- This XML script is used to build the lib_java_core product.
+-->
+<project name="lib_java_fe" default="compile" basedir=".">
+
+   <!-- Get the system environment variables and define any other system
+        properties needed by the build.
+   -->
+   <property environment="env"/>
+   <property name="jar.name" value="fe"/>
+   <property name="classpath" value=""/>
+
+   <!-- Import the universal targets.
+   -->
+   <import file="${env.MGICONFIG}/etc/build.lib.targets.xml"/>
+
+   <!-- Define product specific targets.
+   -->
+   <target name="buildall" description="Executes task 'all'"
+           depends="all, link">
+   </target>
+</project>

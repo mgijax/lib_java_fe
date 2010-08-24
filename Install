@@ -1,0 +1,17 @@
+#!/bin/sh
+#
+#  Install
+###########################################################################
+#
+#  Purpose:  This script invokes the Ant utility to perform the build for
+#            this product.
+#
+#  Usage:  Install
+#
+###########################################################################
+
+cd `dirname $0`
+
+. ./Configuration
+
+$ANT buildall
