@@ -9,6 +9,46 @@ public class IndexConstants {
     // Marker Stuff
     public static final String MRK_KEY      = "markerKey";
     
+    // Allele Stuff
+    public static final String ALL_KEY                  = "alleleKey";
+    public static final String ALL_DRIVER               = "driver";
+    public static final String ALL_SYMBOL_SORT          = "symbolSort";
+    public static final String ALL_TYPE_SORT            = "alleleTypeSort";
+    public static final String ALL_DRIVER_SORT          = "driverSort";
+    public static final String ALL_REFERENCE_COUNT_SORT = "referenceCountSort";
+    public static final String ALL_INDUCIBLE            = "inducible";
+    public static final String ALL_IMSR_COUNT           = "imsrCount";
+    
+    // Cre Allele Stuff
+    public static final String CRE_ALL_SYSTEM                   = "system";
+    public static final String CRE_IN_ADIPOSE_TISSUE            = "inAdiposeTissue";
+    public static final String CRE_IN_ALIMENTARY_SYSTEM         = "inAlimentarySystem";
+    public static final String CRE_IN_BRANCHIAL_ARCHES          = "inBranchialArches";
+    public static final String CRE_IN_CARDIOVASCULAR_SYSTEM     = "inCardiovascularSystem";
+    public static final String CRE_IN_CAVITIES_AND_LININGS      = "inCavitiesAndLinings";
+    public static final String CRE_IN_ENDOCRINE_SYSTEM          = "inEndocrineSystem";
+    public static final String CRE_IN_HEAD                      = "inHead";
+    public static final String CRE_IN_HEMOLYMPHOID_SYSTEM       = "inHemolymphoidSystem";
+    public static final String CRE_IN_INTEGUMENTAL_SYSTEM       = "inIntegumentalSystem";
+    public static final String CRE_IN_LIMBS                     = "inLimbs";
+    public static final String CRE_IN_LIVER_AND_BILIARY_SYSTEM  = "inLiverAndBiliarySystem";
+    public static final String CRE_IN_MESENCHYME                = "inMesenchyme";
+    public static final String CRE_IN_MUSCLE                    = "inMuscle";
+    public static final String CRE_IN_NERVOUS_SYSTEM            = "inNervousSystem";
+    public static final String CRE_IN_RENAL_AND_URINARY_SYSTEM  = "inRenalAndUrinarySystem";
+    public static final String CRE_IN_REPRODUCTIVE_SYSTEM       = "inReproductiveSystem";
+    public static final String CRE_IN_RESPIRATORY_SYSTEM        = "inRespiratorySystem";
+    public static final String CRE_IN_SENSORY_ORGANS            = "inSensoryOrgans";    
+    public static final String CRE_IN_SKELETAL_SYSTEM           = "inSkeletalSystem";
+    public static final String CRE_IN_TAIL                      = "inTail";    
+    public static final String CRE_IN_EARLY_EMBRYO              = "inEarlyEmbryo";    
+    public static final String CRE_IN_EXTRAEMBRYONIC_COMPONENT  = "inExtraembryonicComponent";
+    public static final String CRE_IN_EMBRYO_OTHER              = "inEmbryoOther";
+    public static final String CRE_IN_POSTNATAL_OTHER           = "inPostnatalOther";    
+    public static final String CRE_DETECTED_COUNT               = "detectedCount";
+    public static final String CRE_NOT_DETECTED_COUNT           = "notDetectedCount";
+
+    
     // Reference Stuff
     public static final String REF_KEY              = "referenceKey";
     public static final String REF_ID               = "accID";
