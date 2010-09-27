@@ -54,6 +54,7 @@ public class IndexConstants {
     public static final String REF_ID               = "accID";
     public static final String REF_JOURNAL          = "journal";
     public static final String REF_JOURNAL_SORT     = "journalSort";
+    public static final String REF_JOURNAL_FACET    = "journalFacet";
     public static final String REF_TITLE            = "title";
     public static final String REF_YEAR             = "year";
     public static final String REF_ABSTRACT         = "abstract";
@@ -63,7 +64,10 @@ public class IndexConstants {
     public static final String REF_LAST_AUTHOR      = "lastAuthor";
     public static final String REF_AUTHOR           = "author";
     public static final String REF_AUTHOR_SORT      = "authorSort";
+    public static final String REF_AUTHOR_FACET     = "authorFacet";
     public static final String REF_AUTHOR_FORMATTED = "authorsFormatted";
+    public static final String REF_HAS_DATA         = "hasData";
+    
     
     // General stuff
     public static final String JNUM_ID          = "jnumID";
