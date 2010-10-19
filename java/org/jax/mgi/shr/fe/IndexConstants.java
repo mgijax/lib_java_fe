@@ -7,7 +7,15 @@ public class IndexConstants {
     public static final String SEQ_KEY      = "sequenceKey";
     
     // Marker Stuff
-    public static final String MRK_KEY      = "markerKey";
+    public static final String MRK_KEY                  = "markerKey";
+    public static final String MRK_SYMBOL               = "markerSymbol";
+    public static final String MRK_NAME                 = "markerName";
+    public static final String MRK_TYPE                 = "markerType";
+    public static final String MRK_STATUS               = "markerStatus";
+    public static final String MRK_ORGANISM             = "markerOrganism";
+    
+    public static final String MRK_TERM                 = "markerTerm";
+    public static final String MRK_TERM_ID              = "markerTermID";
     
     // Allele Stuff
     public static final String ALL_KEY                  = "alleleKey";
@@ -47,6 +55,7 @@ public class IndexConstants {
     public static final String CRE_IN_POSTNATAL_OTHER           = "inPostnatalOther";    
     public static final String CRE_DETECTED_COUNT               = "detectedCount";
     public static final String CRE_NOT_DETECTED_COUNT           = "notDetectedCount";
+    public static final String CRE_DETECTED_TOTAL_COUNT         = "detectedTotalCount";
 
     
     // Reference Stuff
