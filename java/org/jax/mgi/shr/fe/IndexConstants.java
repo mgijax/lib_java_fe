@@ -20,12 +20,16 @@ public class IndexConstants {
     // Allele Stuff
     public static final String ALL_KEY                  = "alleleKey";
     public static final String ALL_DRIVER               = "driver";
+    public static final String ALL_SYMBOL               = "allSymbol";
+    public static final String ALL_NAME                 = "allName";
+    public static final String ALL_TYPE                 = "allType";
     public static final String ALL_SYMBOL_SORT          = "symbolSort";
     public static final String ALL_TYPE_SORT            = "alleleTypeSort";
     public static final String ALL_DRIVER_SORT          = "driverSort";
     public static final String ALL_REFERENCE_COUNT_SORT = "referenceCountSort";
     public static final String ALL_INDUCIBLE            = "inducible";
     public static final String ALL_IMSR_COUNT           = "imsrCount";
+    public static final String ALL_ID                   = "allID";
     
     // Cre Allele Stuff
     public static final String CRE_ALL_SYSTEM                   = "system";
