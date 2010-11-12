@@ -3,8 +3,10 @@ package org.jax.mgi.shr.fe;
 public class IndexConstants {
     
     // Sequence Stuff
-    public static final String SEQ_ID       = "accID";
-    public static final String SEQ_KEY      = "sequenceKey";
+    public static final String SEQ_ID                   = "accID";
+    public static final String SEQ_KEY                  = "sequenceKey";
+    public static final String SEQ_TYPE_SORT            = "sequenceTypeSort";
+    public static final String SEQ_PROVIDER_SORT        = "sequenceProviderSort";
     
     // Marker Stuff
     public static final String MRK_KEY                  = "markerKey";
