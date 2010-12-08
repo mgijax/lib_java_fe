@@ -15,6 +15,7 @@ public class IndexConstants {
     public static final String MRK_TYPE                 = "markerType";
     public static final String MRK_STATUS               = "markerStatus";
     public static final String MRK_ORGANISM             = "markerOrganism";
+    public static final String MRK_ID                   = "markerID";
     
     public static final String MRK_TERM                 = "markerTerm";
     public static final String MRK_TERM_ID              = "markerTermID";
@@ -83,7 +84,18 @@ public class IndexConstants {
     public static final String REF_AUTHOR_FORMATTED = "authorsFormatted";
     public static final String REF_HAS_DATA         = "hasData";
     
+    // New Reference Fields
     
+    public static final String REF_ABSTRACT_STEMMED = "abstractStemmed";
+    public static final String REF_ABSTRACT_UNSTEMMED = "abstractUnStemmed";
+    public static final String REF_TITLE_STEMMED = "titleStemmed";
+    public static final String REF_TITLE_UNSTEMMED = "titleUnStemmed";
+    
+    // Collapsed reference field
+    
+    public static final String REF_TITLE_ABSTRACT_STEMMED = "titleAbstractStemmed";
+    public static final String REF_TITLE_ABSTRACT_UNSTEMMED = "titleAbstractUnStemmed";
+        
     // General stuff
     public static final String JNUM_ID          = "jnumID";
     public static final String PUBMED_ID        = "pubMedID";
