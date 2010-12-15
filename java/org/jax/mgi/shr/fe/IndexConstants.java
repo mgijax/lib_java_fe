@@ -90,7 +90,7 @@ public class IndexConstants {
     public static final String REF_ABSTRACT_UNSTEMMED = "abstractUnStemmed";
     public static final String REF_TITLE_STEMMED = "titleStemmed";
     public static final String REF_TITLE_UNSTEMMED = "titleUnStemmed";
-    
+        
     // Collapsed reference field
     
     public static final String REF_TITLE_ABSTRACT_STEMMED = "titleAbstractStemmed";
