@@ -113,8 +113,19 @@ public class IndexConstants {
     public static final String GXD_STRUCT_COUNT = "gxdStructureCount";
     public static final String GXD_ASSAY_COUNT  = "gxdAssayCount";
     
+    // Vocabulary
+    
+    public static final String VOC_TERM         = "vocTerm";
+    public static final String DAG_TYPE         = "dagType";
+    public static final String VOC_VOCAB        = "vocab";
+    
+    // Annotation Constants
+    
+    public static final String ANNOTATION_KEY   = "annotationKey";
+    
     // A special count to denote that no curated data was found
     
+    public static final String UNIQUE_KEY      = "uniqueKey";
     public static final String NO_CURATED_DATA = "noDataCurated";
     
 }
