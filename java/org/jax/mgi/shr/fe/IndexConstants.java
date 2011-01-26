@@ -37,6 +37,9 @@ public class IndexConstants {
     
     // Cre Allele Stuff
     public static final String CRE_ALL_SYSTEM                   = "system";
+    public static final String CRE_ALL_SYSTEM_KEY               = "alleleSystemKey";
+    public static final String CRE_SYSTEM_KEY                   = "systemKey";
+    public static final String CRE_ASSAY_RESULT_KEY             = "resultKey";
     public static final String CRE_IN_ADIPOSE_TISSUE            = "inAdiposeTissue";
     public static final String CRE_IN_ALIMENTARY_SYSTEM         = "inAlimentarySystem";
     public static final String CRE_IN_BRANCHIAL_ARCHES          = "inBranchialArches";
@@ -64,7 +67,22 @@ public class IndexConstants {
     public static final String CRE_DETECTED_COUNT               = "detectedCount";
     public static final String CRE_NOT_DETECTED_COUNT           = "notDetectedCount";
     public static final String CRE_DETECTED_TOTAL_COUNT         = "detectedTotalCount";
-
+    
+    // Cre sorting strings
+    
+    public static final String CRE_BY_STRUCTURE                 = "byStructure";
+    public static final String CRE_BY_AGE                       = "byAge";
+    public static final String CRE_BY_LEVEL                     = "byLevel";
+    public static final String CRE_BY_PATTERN                   = "byPattern";
+    public static final String CRE_BY_JNUM_ID                   = "byJnumID";
+    public static final String CRE_BY_ASSAY_TYPE                = "byAssayType";
+    public static final String CRE_BY_REPORTER_GENE             = "byReporterGene";
+    public static final String CRE_BY_DETECTION_METHOD          = "byDetectionMethod";
+    public static final String CRE_BY_ASSAY_NOTE                = "byAssayNote";
+    public static final String CRE_BY_ALLELIC_COMPOSITION       = "byAllelicComposition";
+    public static final String CRE_BY_SEX                       = "bySex";
+    public static final String CRE_BY_SPECIMEN_NOTE             = "bySpecimenNote";
+    public static final String CRE_BY_RESULT_NOTE               = "byResultNote";
     
     // Reference Stuff
     public static final String REF_KEY              = "referenceKey";
