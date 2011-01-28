@@ -134,6 +134,7 @@ public class IndexConstants {
     // Vocabulary
     
     public static final String VOC_TERM         = "vocTerm";
+    public static final String VOC_ID           = "vocID";
     public static final String DAG_TYPE         = "dagType";
     public static final String VOC_VOCAB        = "vocab";
     
