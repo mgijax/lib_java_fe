@@ -137,6 +137,8 @@ public class IndexConstants {
     public static final String VOC_ID           = "vocID";
     public static final String DAG_TYPE         = "dagType";
     public static final String VOC_VOCAB        = "vocab";
+    public static final String VOC_QUALIFIER    = "qualifier";
+    public static final String VOC_DAG_NAME     = "dagName";
     
     // Annotation Constants
     
