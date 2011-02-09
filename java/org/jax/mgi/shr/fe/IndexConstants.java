@@ -115,6 +115,12 @@ public class IndexConstants {
     public static final String REF_TITLE_ABSTRACT_STEMMED = "titleAbstractStemmed";
     public static final String REF_TITLE_ABSTRACT_UNSTEMMED = "titleAbstractUnStemmed";
         
+    // GXD Lit Index Keys
+    public static final String GXD_LIT_SINGLE_KEY	= "compressedKey";
+    public static final String GXD_LIT_AGE			= "age";
+    public static final String GXD_LIT_ASSAY_TYPE   = "assayType";
+    public static final String GXD_MRK_NOMEN		= "nomen";
+    
     // General stuff
     public static final String JNUM_ID          = "jnumID";
     public static final String PUBMED_ID        = "pubMedID";
@@ -139,6 +145,7 @@ public class IndexConstants {
     public static final String VOC_VOCAB        = "vocab";
     public static final String VOC_QUALIFIER    = "qualifier";
     public static final String VOC_DAG_NAME     = "dagName";
+    public static final String VOC_BY_DAG_STRUCT= "byDagStruct";
     
     // Annotation Constants
     
