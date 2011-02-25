@@ -20,6 +20,7 @@ public class IndexConstants {
     
     public static final String MRK_TERM                 = "markerTerm";
     public static final String MRK_TERM_ID              = "markerTermID";
+    public static final String MRK_BY_SYMBOL			= "byMrkSymbol";
     
     // Allele Stuff
     public static final String ALL_KEY                  = "alleleKey";
@@ -103,6 +104,9 @@ public class IndexConstants {
     public static final String REF_AUTHOR_FORMATTED = "authorsFormatted";
     public static final String REF_HAS_DATA         = "hasData";
     
+    // Autocomplete Fields
+    public static final String AC_FOR_GXD			= "forGXD";
+    
     // New Reference Fields
     
     public static final String REF_ABSTRACT_STEMMED = "abstractStemmed";
@@ -155,5 +159,11 @@ public class IndexConstants {
     
     public static final String UNIQUE_KEY      = "uniqueKey";
     public static final String NO_CURATED_DATA = "noDataCurated";
+    
+    // Images 
+    public static final String IMAGE_KEY	   = "imageKey";
+    
+    // General Sort
+    public static final String BY_DEFAULT	   = "byDefaultSort";
     
 }
