@@ -162,6 +162,10 @@ public class IndexConstants {
     
     // Images 
     public static final String IMAGE_KEY	   = "imageKey";
+    public static final String IMAGE_ID	       = "imageID";
+    public static final String IMAGE_CLASS     = "imageClass";
+    public static final String IS_THUMB	       = "isThumb";
+    public static final String PANESET_KEY	   = "panesetKey";
     
     // General Sort
     public static final String BY_DEFAULT	   = "byDefaultSort";
