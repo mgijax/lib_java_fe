@@ -106,6 +106,8 @@ public class IndexConstants {
     
     // Autocomplete Fields
     public static final String AC_FOR_GXD			= "forGXD";
+    public static final String AC_IS_GENERATED		= "isGenerated";
+    public static final String AC_UNIQUE_KEY		= "acUniqueKey";
     
     // New Reference Fields
     
