@@ -172,4 +172,6 @@ public class IndexConstants {
     // General Sort
     public static final String BY_DEFAULT	   = "byDefaultSort";
     
+    // general item for ordering of records
+    public static final String SEQUENCE_NUM = "sequenceNum";
 }
