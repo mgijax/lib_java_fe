@@ -1,15 +1,15 @@
 package org.jax.mgi.shr.fe;
 
 public class IndexConstants {
-    
-    // Sequence Stuff
+
+    // Sequence
     public static final String SEQ_ID                   = "accID";
     public static final String SEQ_KEY                  = "sequenceKey";
     public static final String SEQ_TYPE_SORT            = "sequenceTypeSort";
     public static final String SEQ_PROVIDER_SORT        = "sequenceProviderSort";
     public static final String SEQ_LENGTH               = "sequenceLength";
-    
-    // Marker Stuff
+
+    // Marker
     public static final String MRK_KEY                  = "markerKey";
     public static final String MRK_SYMBOL               = "markerSymbol";
     public static final String MRK_NAME                 = "markerName";
@@ -17,12 +17,12 @@ public class IndexConstants {
     public static final String MRK_STATUS               = "markerStatus";
     public static final String MRK_ORGANISM             = "markerOrganism";
     public static final String MRK_ID                   = "markerID";
-    
+
     public static final String MRK_TERM                 = "markerTerm";
     public static final String MRK_TERM_ID              = "markerTermID";
-    public static final String MRK_BY_SYMBOL			= "byMrkSymbol";
-    
-    // Allele Stuff
+    public static final String MRK_BY_SYMBOL            = "byMrkSymbol";
+
+    // Allele
     public static final String ALL_KEY                  = "alleleKey";
     public static final String ALL_DRIVER               = "driver";
     public static final String ALL_SYMBOL               = "allSymbol";
@@ -35,8 +35,8 @@ public class IndexConstants {
     public static final String ALL_INDUCIBLE            = "inducible";
     public static final String ALL_IMSR_COUNT           = "imsrCount";
     public static final String ALL_ID                   = "allID";
-    
-    // Cre Allele Stuff
+
+    // Cre Allele
     public static final String CRE_ALL_SYSTEM                   = "system";
     public static final String CRE_ALL_SYSTEM_KEY               = "alleleSystemKey";
     public static final String CRE_SYSTEM_KEY                   = "systemKey";
@@ -58,19 +58,18 @@ public class IndexConstants {
     public static final String CRE_IN_RENAL_AND_URINARY_SYSTEM  = "inRenalAndUrinarySystem";
     public static final String CRE_IN_REPRODUCTIVE_SYSTEM       = "inReproductiveSystem";
     public static final String CRE_IN_RESPIRATORY_SYSTEM        = "inRespiratorySystem";
-    public static final String CRE_IN_SENSORY_ORGANS            = "inSensoryOrgans";    
+    public static final String CRE_IN_SENSORY_ORGANS            = "inSensoryOrgans";
     public static final String CRE_IN_SKELETAL_SYSTEM           = "inSkeletalSystem";
-    public static final String CRE_IN_TAIL                      = "inTail";    
-    public static final String CRE_IN_EARLY_EMBRYO              = "inEarlyEmbryo";    
+    public static final String CRE_IN_TAIL                      = "inTail";
+    public static final String CRE_IN_EARLY_EMBRYO              = "inEarlyEmbryo";
     public static final String CRE_IN_EXTRAEMBRYONIC_COMPONENT  = "inExtraembryonicComponent";
     public static final String CRE_IN_EMBRYO_OTHER              = "inEmbryoOther";
-    public static final String CRE_IN_POSTNATAL_OTHER           = "inPostnatalOther";    
+    public static final String CRE_IN_POSTNATAL_OTHER           = "inPostnatalOther";
     public static final String CRE_DETECTED_COUNT               = "detectedCount";
     public static final String CRE_NOT_DETECTED_COUNT           = "notDetectedCount";
     public static final String CRE_DETECTED_TOTAL_COUNT         = "detectedTotalCount";
-    
-    // Cre sorting strings
-    
+
+    // Cre sorting (column names)
     public static final String CRE_BY_STRUCTURE                 = "byStructure";
     public static final String CRE_BY_AGE                       = "byAge";
     public static final String CRE_BY_LEVEL                     = "byLevel";
@@ -84,8 +83,8 @@ public class IndexConstants {
     public static final String CRE_BY_SEX                       = "bySex";
     public static final String CRE_BY_SPECIMEN_NOTE             = "bySpecimenNote";
     public static final String CRE_BY_RESULT_NOTE               = "byResultNote";
-    
-    // Reference Stuff
+
+    // Reference
     public static final String REF_KEY              = "referenceKey";
     public static final String REF_ID               = "accID";
     public static final String REF_JOURNAL          = "journal";
@@ -103,75 +102,68 @@ public class IndexConstants {
     public static final String REF_AUTHOR_FACET     = "authorFacet";
     public static final String REF_AUTHOR_FORMATTED = "authorsFormatted";
     public static final String REF_HAS_DATA         = "hasData";
-    
-    // Autocomplete Fields
-    public static final String AC_FOR_GXD			= "forGXD";
-    public static final String AC_IS_GENERATED		= "isGenerated";
-    public static final String AC_UNIQUE_KEY		= "acUniqueKey";
-    
-    // New Reference Fields
-    
     public static final String REF_ABSTRACT_STEMMED = "abstractStemmed";
     public static final String REF_ABSTRACT_UNSTEMMED = "abstractUnStemmed";
     public static final String REF_TITLE_STEMMED = "titleStemmed";
     public static final String REF_TITLE_UNSTEMMED = "titleUnStemmed";
-        
-    // Collapsed reference field
-    
     public static final String REF_TITLE_ABSTRACT_STEMMED = "titleAbstractStemmed";
     public static final String REF_TITLE_ABSTRACT_UNSTEMMED = "titleAbstractUnStemmed";
-        
+
+    // Autocomplete Fields
+    public static final String AC_FOR_GXD            = "forGXD";
+    public static final String AC_IS_GENERATED        = "isGenerated";
+    public static final String AC_UNIQUE_KEY        = "acUniqueKey";
+
     // GXD Lit Index Keys
-    public static final String GXD_LIT_SINGLE_KEY	= "compressedKey";
-    public static final String GXD_LIT_AGE			= "age";
+    public static final String GXD_LIT_SINGLE_KEY   = "compressedKey";
+    public static final String GXD_LIT_AGE          = "age";
     public static final String GXD_LIT_ASSAY_TYPE   = "assayType";
-    public static final String GXD_MRK_NOMEN		= "nomen";
-    
-    // General stuff
-    public static final String JNUM_ID          = "jnumID";
-    public static final String PUBMED_ID        = "pubMedID";
-    
+    public static final String GXD_MRK_NOMEN        = "nomen";
+
+    // General
+    public static final String JNUM_ID              = "jnumID";
+    public static final String PUBMED_ID            = "pubMedID";
+    public static final String UNIQUE_KEY           = "uniqueKey";
+
     // Counts
-    public static final String PRB_COUNT        = "probe_count";
-    public static final String MRK_COUNT        = "marker_count";
-    public static final String ALL_COUNT        = "alleleCount";
-    public static final String SEQ_COUNT        = "sequenceCount";
-    public static final String ORTHO_COUNT      = "orthologCount";
-    public static final String MAP_EXPT_COUNT   = "mappingExptCount";
-    public static final String GXD_INDEX_COUNT  = "gxdIndexCount";
-    public static final String GXD_RESULT_COUNT = "gxdResultCount";
-    public static final String GXD_STRUCT_COUNT = "gxdStructureCount";
-    public static final String GXD_ASSAY_COUNT  = "gxdAssayCount";
-    
+    public static final String PRB_COUNT            = "probe_count";
+    public static final String MRK_COUNT            = "marker_count";
+    public static final String ALL_COUNT            = "alleleCount";
+    public static final String SEQ_COUNT            = "sequenceCount";
+    public static final String ORTHO_COUNT          = "orthologCount";
+    public static final String MAP_EXPT_COUNT       = "mappingExptCount";
+    public static final String GXD_INDEX_COUNT      = "gxdIndexCount";
+    public static final String GXD_RESULT_COUNT     = "gxdResultCount";
+    public static final String GXD_STRUCT_COUNT     = "gxdStructureCount";
+    public static final String GXD_ASSAY_COUNT      = "gxdAssayCount";
+
     // Vocabulary
-    
-    public static final String VOC_TERM         = "vocTerm";
-    public static final String VOC_ID           = "vocID";
-    public static final String DAG_TYPE         = "dagType";
-    public static final String VOC_VOCAB        = "vocab";
-    public static final String VOC_QUALIFIER    = "qualifier";
-    public static final String VOC_DAG_NAME     = "dagName";
-    public static final String VOC_BY_DAG_STRUCT= "byDagStruct";
-    
+    public static final String VOC_TERM             = "vocTerm";
+    public static final String VOC_ID               = "vocID";
+    public static final String DAG_TYPE             = "dagType";
+    public static final String VOC_VOCAB            = "vocab";
+    public static final String VOC_QUALIFIER        = "qualifier";
+    public static final String VOC_DAG_NAME         = "dagName";
+    public static final String VOC_BY_DAG_STRUCT    = "byDagStruct";
+
     // Annotation Constants
-    
-    public static final String ANNOTATION_KEY   = "annotationKey";
-    
+    public static final String ANNOTATION_KEY       = "annotationKey";
+
     // A special count to denote that no curated data was found
-    
-    public static final String UNIQUE_KEY      = "uniqueKey";
-    public static final String NO_CURATED_DATA = "noDataCurated";
-    
-    // Images 
-    public static final String IMAGE_KEY	   = "imageKey";
-    public static final String IMAGE_ID	       = "imageID";
-    public static final String IMAGE_CLASS     = "imageClass";
-    public static final String IS_THUMB	       = "isThumb";
-    public static final String PANESET_KEY	   = "panesetKey";
-    
+    public static final String NO_CURATED_DATA      = "noDataCurated";
+
+    // Images
+    public static final String IMAGE_KEY            = "imageKey";
+    public static final String IMAGE_ID             = "imageID";
+    public static final String IMAGE_CLASS          = "imageClass";
+    public static final String IMAGE_CLASS_PHENO    = "Phenotypes";
+    public static final String IMAGE_CLASS_GXD      = "Expression";
+    public static final String IS_THUMB             = "isThumb";
+    public static final String PANESET_KEY          = "panesetKey";
+
     // General Sort
-    public static final String BY_DEFAULT	   = "byDefaultSort";
-    
-    // general item for ordering of records
+    public static final String BY_DEFAULT           = "byDefaultSort";
+
+    // ordering of records (not specific to actual DNA/Poly sequences)
     public static final String SEQUENCE_NUM = "sequenceNum";
 }
