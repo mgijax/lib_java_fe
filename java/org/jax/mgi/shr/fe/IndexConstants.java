@@ -6,6 +6,7 @@ public class IndexConstants {
     public static final String SEQ_ID                   = "accID";
     public static final String SEQ_KEY                  = "sequenceKey";
     public static final String SEQ_TYPE_SORT            = "sequenceTypeSort";
+    public static final String SEQ_PROVIDER             = "sequenceProvider";
     public static final String SEQ_PROVIDER_SORT        = "sequenceProviderSort";
     public static final String SEQ_LENGTH               = "sequenceLength";
 
@@ -89,6 +90,7 @@ public class IndexConstants {
     public static final String REF_ID               = "accID";
     public static final String REF_JOURNAL          = "journal";
     public static final String REF_JOURNAL_SORT     = "journalSort";
+    public static final String REF_JOURNAL_SORT_LOWER = "journalSortLower";
     public static final String REF_JOURNAL_FACET    = "journalFacet";
     public static final String REF_TITLE            = "title";
     public static final String REF_YEAR             = "year";
