@@ -127,6 +127,7 @@ public class IndexConstants {
 
     // General
     public static final String JNUM_ID              = "jnumID";
+    public static final String MGI_ID               = "mgiID";
     public static final String PUBMED_ID            = "pubMedID";
     public static final String UNIQUE_KEY           = "uniqueKey";
 
