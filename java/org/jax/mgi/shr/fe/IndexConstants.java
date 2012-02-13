@@ -122,6 +122,7 @@ public class IndexConstants {
     public static final String GXD_LIT_ASSAY_TYPE   = "assayType";
     public static final String GXD_MRK_NOMEN        = "nomen";
     public static final String GXD_MRK_NOMEN_BEGINS = "nomenNGram";
+    public static final String GXD_MRK_SYMBOL       = "symbolAndSynonyms";
     public static final String GXD_LIT_FC_ASSAY_TYPE = "fullCodedAssayType";
     public static final String GXD_LIT_THEILER_STAGE = "theilerStage";
 
