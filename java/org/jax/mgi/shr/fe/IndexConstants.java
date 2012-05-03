@@ -152,6 +152,7 @@ public class IndexConstants {
     public static final String VOC_QUALIFIER        = "qualifier";
     public static final String VOC_DAG_NAME         = "dagName";
     public static final String VOC_BY_DAG_STRUCT    = "byDagStruct";
+    public static final String VOC_BY_DAG_TERM      = "byDagTerm";
 
     // Annotation Constants
     public static final String ANNOTATION_KEY       = "annotationKey";
