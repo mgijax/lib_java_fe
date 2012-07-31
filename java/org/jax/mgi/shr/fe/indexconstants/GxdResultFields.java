@@ -15,6 +15,7 @@ public class GxdResultFields
     public static final String STRUCTURE_ANCESTORS = "structureAncestors";
     public static final String STRUCTURE_ID = "structureId";
     public static final String STRUCTURE_KEY = "structureKey";
+    public static final String ANNOTATED_STRUCTURE_KEY = "annotatedStructureKey";
     public static final String STRUCTURE_DESCENDANTS = "structureDescendants";
     public static final String MUTATED_IN = "mutatedIn";
     public static final String IS_WILD_TYPE = "isWildType";
