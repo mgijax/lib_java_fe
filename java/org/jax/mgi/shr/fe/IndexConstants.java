@@ -179,6 +179,7 @@ public class IndexConstants {
     public static final String STRUCTUREAC_KEY = "structureKey"; 
     public static final String STRUCTUREAC_STRUCTURE = "structure";
     public static final String STRUCTUREAC_SYNONYM = "synonym";
+    public static final String STRUCTUREAC_IS_STRICT_SYNONYM = "isStrictSynonym";
     public static final String STRUCTUREAC_BY_SYNONYM = "by_synonym";
     
     // Vocab Term Auto Complete Fields
