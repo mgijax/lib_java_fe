@@ -54,6 +54,7 @@ public class GxdResultFields
 
     // assay centric sorts
     public static final String A_BY_SYMBOL = "byAssayMrkSymbol";
+    public static final String A_BY_ASSAY_TYPE = "byAssayAssayType";
 
     // marker centric query fields
     public static final String MARKER_KEY = "markerKey";
