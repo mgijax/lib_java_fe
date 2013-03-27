@@ -44,6 +44,30 @@ public class IndexConstants {
     public static final String CRE_ALL_SYSTEM_KEY               = "alleleSystemKey";
     public static final String CRE_SYSTEM_KEY                   = "systemKey";
     public static final String CRE_ASSAY_RESULT_KEY             = "resultKey";
+    public static final String CRE_IN_ADIPOSE_TISSUE            = "inAdiposeTissue";
+    public static final String CRE_IN_ALIMENTARY_SYSTEM         = "inAlimentarySystem";
+    public static final String CRE_IN_BRANCHIAL_ARCHES          = "inBranchialArches";
+    public static final String CRE_IN_CARDIOVASCULAR_SYSTEM     = "inCardiovascularSystem";
+    public static final String CRE_IN_CAVITIES_AND_LININGS      = "inCavitiesAndLinings";
+    public static final String CRE_IN_ENDOCRINE_SYSTEM          = "inEndocrineSystem";
+    public static final String CRE_IN_HEAD                      = "inHead";
+    public static final String CRE_IN_HEMOLYMPHOID_SYSTEM       = "inHemolymphoidSystem";
+    public static final String CRE_IN_INTEGUMENTAL_SYSTEM       = "inIntegumentalSystem";
+    public static final String CRE_IN_LIMBS                     = "inLimbs";
+    public static final String CRE_IN_LIVER_AND_BILIARY_SYSTEM  = "inLiverAndBiliarySystem";
+    public static final String CRE_IN_MESENCHYME                = "inMesenchyme";
+    public static final String CRE_IN_MUSCLE                    = "inMuscle";
+    public static final String CRE_IN_NERVOUS_SYSTEM            = "inNervousSystem";
+    public static final String CRE_IN_RENAL_AND_URINARY_SYSTEM  = "inRenalAndUrinarySystem";
+    public static final String CRE_IN_REPRODUCTIVE_SYSTEM       = "inReproductiveSystem";
+    public static final String CRE_IN_RESPIRATORY_SYSTEM        = "inRespiratorySystem";
+    public static final String CRE_IN_SENSORY_ORGANS            = "inSensoryOrgans";
+    public static final String CRE_IN_SKELETAL_SYSTEM           = "inSkeletalSystem";
+    public static final String CRE_IN_TAIL                      = "inTail";
+    public static final String CRE_IN_EARLY_EMBRYO              = "inEarlyEmbryo";
+    public static final String CRE_IN_EXTRAEMBRYONIC_COMPONENT  = "inExtraembryonicComponent";
+    public static final String CRE_IN_EMBRYO_OTHER              = "inEmbryoOther";
+    public static final String CRE_IN_POSTNATAL_OTHER           = "inPostnatalOther";
     public static final String CRE_DETECTED_COUNT               = "detectedCount";
     public static final String CRE_NOT_DETECTED_COUNT           = "notDetectedCount";
     public static final String CRE_DETECTED_TOTAL_COUNT         = "detectedTotalCount";
@@ -157,6 +181,7 @@ public class IndexConstants {
     public static final String STRUCTUREAC_SYNONYM = "synonym";
     public static final String STRUCTUREAC_IS_STRICT_SYNONYM = "isStrictSynonym";
     public static final String STRUCTUREAC_BY_SYNONYM = "by_synonym";
+    public static final String STRUCTUREAC_HAS_CRE = "hasCre";
     
     // Vocab Term Auto Complete Fields
     public static final String VOCABAC_KEY = "uniqueKey";
