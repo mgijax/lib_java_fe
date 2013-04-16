@@ -136,6 +136,7 @@ public class IndexConstants {
     public static final String UNIQUE_KEY           = "uniqueKey";
 
     // Counts
+    public static final String GO_ANNOT_COUNT       = "goAnnotationCount";
     public static final String PRB_COUNT            = "probe_count";
     public static final String MRK_COUNT            = "marker_count";
     public static final String ALL_COUNT            = "alleleCount";
@@ -156,6 +157,7 @@ public class IndexConstants {
     public static final String VOC_DAG_NAME         = "dagName";
     public static final String VOC_BY_DAG_STRUCT    = "byDagStruct";
     public static final String VOC_BY_DAG_TERM      = "byDagTerm";
+    public static final String BY_MRK_DAG_TERM      = "byMarkerDagTerm";
 
     // Annotation Constants
     public static final String ANNOTATION_KEY       = "annotationKey";
@@ -198,7 +200,14 @@ public class IndexConstants {
     public static final String VOCABAC_MARKER_COUNT = "markerCount";
     public static final String VOCABAC_EXPRESSION_MARKER_COUNT = "expressionMarkerCount";
     public static final String VOCABAC_GXDLIT_MARKER_COUNT = "gxdlitMarkerCount";
+    
+    // Homology constants
+    public static final String HOMOLOGY_ID = "homologyID";
+    public static final String HOMOLOGY_KEY = "homologyKey";
 
+    // Disease constants
+    public static final String DISEASE_ID = "diseaseID";
+    public static final String DISEASE_KEY = "diseaseKey";
 
     // ordering of records (not specific to actual DNA/Poly sequences)
     public static final String SEQUENCE_NUM = "sequenceNum";
