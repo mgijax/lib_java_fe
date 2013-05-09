@@ -1,3 +1,8 @@
+TAG: ?
+DATE: 2013/05/09
+STAFF: kstone
+CHANGES: merge TR11248 (GXD/SNP/Cre) to trunk
+
 TAG: lib_java_fe-5-1-3-1
 TAG: lib_java_fe-5-1-2-1
 DATE: 04/16/2013
@@ -5,7 +10,7 @@ STAFF: sc
 CHANGES: N2MO - merge tr6519 branch to the trunk
 
 TAG: lib_java_fe-tr11248-BP
-DATE: ?
+DATE: 11/27/12
 STAFF: lec
 CHANGES: branch point for TR11248 (GXD/SNP/Cre)
 

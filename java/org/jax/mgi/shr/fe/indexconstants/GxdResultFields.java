@@ -74,4 +74,13 @@ public class GxdResultFields
     public static final String END_COORD = "endCoord";
     public static final String STRAND = "strand";
 
+    // other query fields
+    public static final String PROBE_KEY = "probeKey";
+    public static final String ANTIBODY_KEY = "antibodyKey";
+    
+    // differential fields
+    public static final String DIFF_POS_ANCESTORS = "posAnc";
+    public static final String DIFF_EXC_ANCESTORS = "excAnc";
+    public static final String DIFF_EXC_ANCESTORS_ALL_STAGES = "excAncAllStages";
+    public static final String DIFF_NEG_DESCENDANTS = "negDec";
 }
