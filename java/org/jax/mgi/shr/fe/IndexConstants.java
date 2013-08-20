@@ -137,6 +137,15 @@ public class IndexConstants {
 
     // Annotation Constants
     public static final String ANNOTATION_KEY       = "annotationKey";
+    public static final String TERM_ID              = "termID";
+    public static final String TERM                 = "term";
+    public static final String ANNOTATED_TERM_ID    = "annotatedTermID";
+    public static final String BY_GENOTYPE_TERM     = "byGenotypeTerm";
+
+    // Genotypes
+    public static final String GENOTYPE_KEY	    = "genotypeKey";
+    public static final String ALLELE_PAIRS	    = "allelePairs";
+    public static final String BACKGROUND_STRAIN    = "backgroundStrain";
 
     // A special count to denote that no curated data was found
     public static final String NO_CURATED_DATA      = "noDataCurated";
