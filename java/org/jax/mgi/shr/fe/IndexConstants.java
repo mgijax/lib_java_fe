@@ -88,6 +88,8 @@ public class IndexConstants {
     public static final String REF_TITLE_UNSTEMMED = "titleUnStemmed";
     public static final String REF_TITLE_ABSTRACT_STEMMED = "titleAbstractStemmed";
     public static final String REF_TITLE_ABSTRACT_UNSTEMMED = "titleAbstractUnStemmed";
+    public static final String REF_DISEASE_ID = "diseaseId";
+    public static final String REF_DISEASE_RELEVANT_MARKER_ID = "diseaseRelevantMarkerId";
 
     // Autocomplete Fields
     public static final String AC_FOR_GXD            = "forGXD";
