@@ -22,6 +22,7 @@ public class DiseasePortalFields
 	public static final String MARKER_SYNONYM = "markerSynonym";
 	public static final String ORTHOLOG_ID = "orthologId";
 	public static final String ORTHOLOG_NOMEN = "orthologNomen";
+	public static final String HUMAN_DISEASE_JOIN_KEY = "humanDiseaseKey";
 	
 	// aggregate marker fields
 	// 		contains name, symbol,synonyms, and orthologNomen
@@ -39,6 +40,7 @@ public class DiseasePortalFields
 	public static final String MARKER_SYSTEM = "markerSystem";
 	public static final String MARKER_ALL_REF_COUNT = "markerAllRefCount";
 	public static final String MARKER_DISEASE_REF_COUNT = "markerDiseaseRefCount";
+	public static final String MARKER_IMSR_COUNT = "markerIMSRCount";
 	
 	// marker sort fields
 	public static final String BY_MARKER_SYMBOL = "byMarkerSymbol";
