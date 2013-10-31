@@ -53,6 +53,8 @@ public class DiseasePortalFields
 	public static final String GENO_CLUSTER_KEY = "genoClusterKey";
     public static final String GENOTYPE_KEY = "genotypeKey";
     public static final String GENOTYPE_TYPE = "genotypeType";
+
+	public static final String ANNOT_COUNT = "annotCount";
     
     // sorts for genotypes
     public static final String BY_GENOCLUSTER = "byGenoCluster";
