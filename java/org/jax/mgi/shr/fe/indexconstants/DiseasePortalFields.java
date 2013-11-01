@@ -55,6 +55,7 @@ public class DiseasePortalFields
     public static final String GENOTYPE_TYPE = "genotypeType";
 
 	public static final String ANNOT_COUNT = "annotCount";
+	public static final String HUMAN_ANNOT_COUNT = "humanAnnotCount";
     
     // sorts for genotypes
     public static final String BY_GENOCLUSTER = "byGenoCluster";
