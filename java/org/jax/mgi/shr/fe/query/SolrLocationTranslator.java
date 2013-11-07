@@ -146,12 +146,13 @@ public class SolrLocationTranslator
 	 */
 	public static String getQueryValue(String queryString)
 	{
-		if(queryString==null || queryString.equals("")) return "";
+		if(queryString==null) return "";
 
 		String errorReturn = "";
 		queryString = queryString.toLowerCase();
 		queryString = queryString.replace("chr",""); // remove the optional "chr" text
-				
+		if(queryString.equals("")) return "";
+		
 		// resolve strand
 		// assume +
 		boolean strand = true;
