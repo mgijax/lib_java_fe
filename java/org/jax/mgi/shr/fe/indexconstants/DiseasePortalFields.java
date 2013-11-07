@@ -13,8 +13,8 @@ public class DiseasePortalFields
 	
 	//marker
 	public static final String MARKER_KEY = "markerKey";
-	public static final String MOUSE_COORDINATE = "mouseCoordinate";
-	public static final String HUMAN_COORDINATE = "humanCoordinate";
+	public static final String MOUSE_COORDINATE = "mc";
+	public static final String HUMAN_COORDINATE = "hc";
 	public static final String ORGANISM = "organism";
 	public static final String MARKER_SYMBOL = "markerSymbol";
 	public static final String MARKER_MGI_ID = "markerMgiId";
