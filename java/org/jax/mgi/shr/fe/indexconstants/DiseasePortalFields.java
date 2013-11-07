@@ -18,17 +18,17 @@ public class DiseasePortalFields
 	public static final String ORGANISM = "organism";
 	public static final String MARKER_SYMBOL = "markerSymbol";
 	public static final String MARKER_MGI_ID = "markerMgiId";
-	public static final String MARKER_ID = "markerId";
-	public static final String MARKER_SYNONYM = "markerSynonym";
-	public static final String ORTHOLOG_ID = "orthologId";
-	public static final String ORTHOLOG_NOMEN = "orthologNomen";
+	public static final String MARKER_ID = "mI";
+	public static final String MARKER_SYNONYM = "mSy";
+	public static final String ORTHOLOG_ID = "oI";
+	public static final String ORTHOLOG_NOMEN = "oN";
 	public static final String HUMAN_DISEASE_JOIN_KEY = "humanDiseaseKey";
 	
 	// aggregate marker fields
 	// 		contains name, symbol,synonyms, and orthologNomen
-	public static final String MARKER_NOMEN_SEARCH = "markerNomenSearch";
+	public static final String MARKER_NOMEN_SEARCH = "mnS";
 	// 		contains markerId and orthologId
-	public static final String MARKER_ID_SEARCH = "markerIdSearch";
+	public static final String MARKER_ID_SEARCH = "miS";
 	
 	// marker - readonly fields
 	public static final String MARKER_NAME = "markerName";
@@ -69,14 +69,14 @@ public class DiseasePortalFields
     public static final String VOCAB_NAME = "vocabName";
     public static final String TERM_HEADER = "termHeader";
     public static final String DISEASE_REF_COUNT = "diseaseRefCount";
-    public static final String TERM_SYNONYM = "termSynonym";
-    public static final String TERM_ANCESTOR = "termAncestor";
+    public static final String TERM_SYNONYM = "tSy";
+    public static final String TERM_ANCESTOR = "tA";
     public static final String TERM_ALT_ID = "altTermId";
-    public static final String MP_TERM_FOR_HUMAN_DISEASE = "mpTermForHumanDisease";
-    public static final String MP_TERM_FOR_DISEASE = "mpTermForDisease";
-    public static final String MP_TERM_FOR_PHENOTYPE = "mpTermForPhenotype";
-    public static final String OMIM_TERM_FOR_PHENOTYPE = "omimTermForPhenotype";
-    public static final String OMIM_TERM_FOR_DISEASE = "omimTermForDisease";
+    public static final String MP_TERM_FOR_HUMAN_DISEASE = "mpHD";
+    public static final String MP_TERM_FOR_DISEASE = "mpD";
+    public static final String MP_TERM_FOR_PHENOTYPE = "mpP";
+    public static final String OMIM_TERM_FOR_PHENOTYPE = "dP";
+    public static final String OMIM_TERM_FOR_DISEASE = "dD";
     public static final String DISEASE_MODEL_COUNTS = "diseaseModelCounts";
     public static final String TERM_MOUSESYMBOL = "termMouseSymbol";
     public static final String TERM_HUMANSYMBOL = "termHumanSymbol";
@@ -93,13 +93,13 @@ public class DiseasePortalFields
     
     // aggregate term fields
     // contains term_id + term_alt_id
-    public static final String TERM_ID_SEARCH = "termIdSearch";
+    public static final String TERM_ID_SEARCH = "tiS";
     // contains term, term_id,term_synonym,term_ancestor,term_alt_id
-    public static final String TERM_SEARCH = "termSearch";
+    public static final String TERM_SEARCH = "tS";
     // contains termSearch + mpTermForDisease
-    public static final String TERM_SEARCH_FOR_DISEASE = "termSearchForDisease";
+    public static final String TERM_SEARCH_FOR_DISEASE = "tsD";
     // contains termSearch + mpTermForSSDisease
-    public static final String TERM_SEARCH_FOR_GRID_COLUMNS = "termSearchForGridColumns";
+    public static final String TERM_SEARCH_FOR_GRID_COLUMNS = "tsG";
     
     public static final String UNIQUE_KEY = "uniqueKey";
 }
