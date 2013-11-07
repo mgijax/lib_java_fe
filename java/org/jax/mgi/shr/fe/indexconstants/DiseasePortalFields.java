@@ -73,6 +73,7 @@ public class DiseasePortalFields
     public static final String TERM_ANCESTOR = "tA";
     public static final String TERM_ALT_ID = "altTermId";
     public static final String MP_TERM_FOR_HUMAN_DISEASE = "mpHD";
+    public static final String MP_TERM_FOR_SS_DISEASE = "mpSSD";
     public static final String MP_TERM_FOR_DISEASE = "mpD";
     public static final String MP_TERM_FOR_PHENOTYPE = "mpP";
     public static final String OMIM_TERM_FOR_PHENOTYPE = "dP";
