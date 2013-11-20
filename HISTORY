@@ -1,7 +1,9 @@
-TAG: lib_java_fe-5-1-6-1
-DATE: 11/12/2013
+TAG: lib_java_fe-5-1-6-1,lib_java_fe-5-1-6-2
+DATE: 11/20/2013
 STAFF: kstone
-CHANGES: TR11423 (Disease Portal)
+CHANGES: 
+1) TR11423 (Disease Portal)
+2) fix for coordinate sorting
 
 TAG: lib_java_fe-tr11468-BP
 DATE: 10/07/2013
