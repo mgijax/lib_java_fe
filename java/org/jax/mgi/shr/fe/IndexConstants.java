@@ -107,7 +107,17 @@ public class IndexConstants {
     public static final String GXD_LIT_FC_ASSAY_TYPE = "fullCodedAssayType";
     public static final String GXD_LIT_THEILER_STAGE = "theilerStage";
 
+    // other GXD
+    public static final String GXD_START_STAGE	= "startStage";
+    public static final String GXD_END_STAGE	= "endStage";
+    public static final String GXD_SYSTEM_FACET = "anatomicalSystem";
+    public static final String GXD_ASSAY_TYPE_FACET = "assayType";
+    public static final String GXD_WILDTYPE_FACET = "isWildType";
+    public static final String GXD_DETECTED_FACET = "detectionLevel";
+    public static final String GXD_THEILER_STAGE_FACET = "theilerStage";
+
     // General
+    public static final String ACC_ID               = "accID";
     public static final String JNUM_ID              = "jnumID";
     public static final String MGI_ID               = "mgiID";
     public static final String PUBMED_ID            = "pubMedID";
@@ -171,6 +181,8 @@ public class IndexConstants {
     public static final String STRUCTUREAC_IS_STRICT_SYNONYM = "isStrictSynonym";
     public static final String STRUCTUREAC_BY_SYNONYM = "by_synonym";
     public static final String STRUCTUREAC_HAS_CRE = "hasCre";
+    public static final String STRUCTUREAC_START_STAGE = "startStage";
+    public static final String STRUCTUREAC_END_STAGE = "endStage";
     
     // Vocab Term Auto Complete Fields
     public static final String VOCABAC_KEY = "uniqueKey";
