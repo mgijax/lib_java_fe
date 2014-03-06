@@ -31,14 +31,27 @@ public class IndexConstants {
     public static final String ALL_SYMBOL               = "allSymbol";
     public static final String ALL_NAME                 = "allName";
     public static final String ALL_TYPE                 = "allType";
-    public static final String ALL_SYMBOL_SORT          = "symbolSort";
-    public static final String ALL_TYPE_SORT            = "alleleTypeSort";
-    public static final String ALL_DRIVER_SORT          = "driverSort";
-    public static final String ALL_REFERENCE_COUNT_SORT = "referenceCountSort";
+    public static final String ALL_SUBTYPE                 = "allSubType";
     public static final String ALL_INDUCIBLE            = "inducible";
     public static final String ALL_IMSR_COUNT           = "imsrCount";
     public static final String ALL_ID                   = "allID";
+    public static final String ALL_IS_WILD_TYPE                  = "isWildType";
+    public static final String ALL_COLLECTION                  = "collection";
+    public static final String ALL_PHENO_ID				= "phenoId";
+    public static final String ALL_PHENO_TEXT			= "phenoText";
+    public static final String ALL_NOMEN				= "allNomen";
+    public static final String ALL_HAS_OMIM				=	"hasOMIM";
+    public static final String ALL_IS_CELLLINE			= 	"isCellLine";
 
+    // allele sorts
+    public static final String ALL_TRANSMISSION_SORT    = "transmissionSort";
+    public static final String ALL_SYMBOL_SORT          = "symbolSort";
+    public static final String ALL_CHR_SORT          	= "chrSort";
+    public static final String ALL_DISEASE_SORT          	= "diseaseSort";
+    public static final String ALL_TYPE_SORT            = "alleleTypeSort";
+    public static final String ALL_DRIVER_SORT          = "driverSort";
+    public static final String ALL_REFERENCE_COUNT_SORT = "referenceCountSort";
+    
     // Cre Allele
     public static final String CRE_ALL_SYSTEM                   = "system";
     public static final String CRE_ALL_SYSTEM_KEY               = "alleleSystemKey";
@@ -210,4 +223,12 @@ public class IndexConstants {
 
     // ordering of records (not specific to actual DNA/Poly sequences)
     public static final String SEQUENCE_NUM = "sequenceNum";
+    
+    // locations
+    public static final String START_COORD = "startCoord";
+    public static final String END_COORD = "endCoord";
+    public static final String CHROMOSOME = "chromosome";
+    public static final String CM_OFFSET = "cm";
+    public static final String CYTOGENETIC_OFFSET = "cytogenetic";
+
 }
