@@ -8,6 +8,10 @@ import java.util.Map;
  */
 public class CreFields 
 {
+	/* 
+	 * These fields map directly to highlightable systems on the Cre query.
+	 * Must be in sync with database values
+	 *  */
 	public static Map<String,String> SYSTEM_FIELDS = new LinkedHashMap<String,String>();
 	static
 	{
@@ -19,6 +23,7 @@ public class CreFields
         SYSTEM_FIELDS.put("cavities and their linings","cavitiesAndLinings");
         SYSTEM_FIELDS.put("early embryo","earlyEmbryo");
         SYSTEM_FIELDS.put("embryo-other","embryoOther");
+        SYSTEM_FIELDS.put("endocrine system","endocrineSystem");
         SYSTEM_FIELDS.put("extraembryonic component","extraembryonicComponent");
         SYSTEM_FIELDS.put("head","head");
         SYSTEM_FIELDS.put("hemolymphoid system","hemolymphoidSystem");
