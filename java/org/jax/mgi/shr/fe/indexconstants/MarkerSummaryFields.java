@@ -42,6 +42,7 @@ public class MarkerSummaryFields {
 	public static final String GO_PROCESS_TERM = "goProcessTerm";
 	public static final String GO_FUNCTION_TERM = "goFunctionTerm";
 	public static final String GO_COMPONENT_TERM = "goComponentTerm";
+	public static final String GO_TERM = "goTerm";
 	public static final String INTERPRO_TERM = "interProTerm";
 	public static final String PHENO_TEXT = "phenoText";
 	public static final String PHENO_ID = "phenoId";
