@@ -9,6 +9,7 @@ import java.util.Map;
  */
 public class MarkerSummaryFields {
 
+	// mrk_label type to solr field mapping (for nomen queries/why matched/scoring)
 	public static Map<String,String> NOMEN_FIELDS = new LinkedHashMap<String,String>();
 	static
 	{
@@ -32,4 +33,25 @@ public class MarkerSummaryFields {
         NOMEN_FIELDS.put("zebrafish symbol","zebrafishSymbol");
         NOMEN_FIELDS.put("chicken symbol","chickenSymbol");
 	}
+	
+	
+	
+	// query fields unique to marker summary
+	public static final String FEATURE_TYPE = "featureType";
+	public static final String FEATURE_TYPE_KEY = "featureTypeKey"; // the mcv key for marker features
+	public static final String GO_PROCESS_TERM = "goProcessTerm";
+	public static final String GO_FUNCTION_TERM = "goFunctionTerm";
+	public static final String GO_COMPONENT_TERM = "goComponentTerm";
+	public static final String INTERPRO_TERM = "interProTerm";
+	public static final String PHENO_TEXT = "phenoText";
+	public static final String PHENO_ID = "phenoId";
+	
+	// readonly fields for summary display
+	public static final String COORDINATE_DISPLAY = "coordinateDisplay";
+	public static final String LOCATION_DISPLAY = "locationDisplay";
+	
+	// sort fields
+	public static final String BY_SYMBOL = "bySymbol";
+	public static final String BY_LOCATION = "byLocation";
+
 }
