@@ -16,11 +16,11 @@ public class MarkerSummaryFields {
         // init nomen fields in priority order
     	NOMEN_FIELDS.put("current symbol","currentSymbol");
         NOMEN_FIELDS.put("synonym","synonym");
+        NOMEN_FIELDS.put("old symbol","oldSymbol");
         NOMEN_FIELDS.put("human synonym","humanSynonym");
     	NOMEN_FIELDS.put("current name","currentName");
         NOMEN_FIELDS.put("allele symbol","alleleSymbol");
         NOMEN_FIELDS.put("allele name","alleleName");
-        NOMEN_FIELDS.put("old symbol","oldSymbol");
         NOMEN_FIELDS.put("old name","oldName");
         NOMEN_FIELDS.put("rat synonym","ratSynonym");
         NOMEN_FIELDS.put("related synonym","relatedSynonym");
