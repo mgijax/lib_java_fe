@@ -232,4 +232,28 @@ public class IndexConstants {
     public static final String CYTOGENETIC_OFFSET = "cytogenetic";
     public static final String STRAND = "strand";
 
+    // regulates relationships
+
+    public static final String REG_KEY = "regKey";
+    public static final String ORGANIZER_ID = "organizerID";
+    public static final String ORGANIZER_SYMBOL = "organizerSymbol";
+    public static final String PARTICIPANT_ID = "participantID";
+    public static final String PARTICIPANT_SYMBOL = "participantSymbol";
+    public static final String RELATIONSHIP_TERM = "relationshipTerm";
+    public static final String EVIDENCE_CODE = "evidenceCode";
+    public static final String VALIDATION = "validation";
+    public static final String VALIDATION_SORTABLE = "validation_sortable";
+    public static final String SCORE_VALUE = "score_value";
+    public static final String SCORE_SOURCE = "score_source";
+    public static final String SCORE_SOURCE_SORTABLE = "score_source_sortable";
+    public static final String SCORE_NUMERIC = "score_numeric";
+    public static final String SCORE_SORTABLE = "score_sortable";
+    public static final String SCORE_FILTERABLE = "score_filterable";
+    public static final String MATURE_TRANSCRIPT = "matureTranscript";
+    public static final String NOTES = "notes";
+    public static final String PROPERTIES = "properties";
+    public static final String BY_MARKER_SYMBOL = "byMarkerSymbol";
+    public static final String BY_ORGANIZER_SYMBOL = "byOrganizerSymbol";
+    public static final String BY_PARTICIPANT_SYMBOL = "byParticipantSymbol";
+    public static final String BY_JNUM_ID = "byJnumID";
 }
