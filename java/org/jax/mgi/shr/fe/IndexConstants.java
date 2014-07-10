@@ -42,6 +42,7 @@ public class IndexConstants {
     public static final String ALL_NOMEN				= "allNomen";
     public static final String ALL_HAS_OMIM				=	"hasOMIM";
     public static final String ALL_IS_CELLLINE			= 	"isCellLine";
+    public static final String ALL_MI_MARKER_IDS	= "mutationInvolvesMarkerIDs";
 
     // allele sorts
     public static final String ALL_TRANSMISSION_SORT    = "transmissionSort";
