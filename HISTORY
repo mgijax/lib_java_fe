@@ -1,3 +1,9 @@
+TAG: lib_java_fe-5-1-9-3
+DATE: 08/01/2014
+STAFF: dbm
+CHANGES:
+1) MarkerSummaryFields.java: added xenopus (TR11662)
+
 TAG: lib_java_fe-5-1-9-2
 DATE: 07/10/2014
 STAFF: jsb
