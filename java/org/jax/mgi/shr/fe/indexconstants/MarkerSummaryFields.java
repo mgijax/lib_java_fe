@@ -29,6 +29,7 @@ public class MarkerSummaryFields {
         NOMEN_FIELDS.put("rat symbol","ratSymbol");
         NOMEN_FIELDS.put("rhesus macaque symbol","rhesusMacaqueSymbol");
         NOMEN_FIELDS.put("cattle symbol","cattleSymbol");
+        NOMEN_FIELDS.put("xenopus symbol","xenopusSymbol");
         NOMEN_FIELDS.put("dog symbol","dogSymbol");
         NOMEN_FIELDS.put("zebrafish symbol","zebrafishSymbol");
         NOMEN_FIELDS.put("chicken symbol","chickenSymbol");
