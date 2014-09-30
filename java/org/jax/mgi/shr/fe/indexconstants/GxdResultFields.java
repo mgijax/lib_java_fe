@@ -74,14 +74,19 @@ public class GxdResultFields
     public static final String START_COORD = "startCoord";
     public static final String END_COORD = "endCoord";
     public static final String STRAND = "strand";
+    public static final String MOUSE_COORDINATE = "mc";
 
     // other query fields
     public static final String PROBE_KEY = "probeKey";
     public static final String ANTIBODY_KEY = "antibodyKey";
-    
+
     // differential fields
     public static final String DIFF_POS_ANCESTORS = "posAnc";
     public static final String DIFF_EXC_ANCESTORS = "excAnc";
     public static final String DIFF_EXC_ANCESTORS_ALL_STAGES = "excAncAllStages";
     public static final String DIFF_NEG_DESCENDANTS = "negDec";
+
+    // Matrix group fields
+    public static final String STAGE_MATRIX_GROUP = "stageMatrixGroup";
+    public static final String GENE_MATRIX_GROUP = "geneMatrixGroup";
 }
