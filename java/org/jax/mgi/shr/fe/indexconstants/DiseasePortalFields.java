@@ -100,6 +100,8 @@ public class DiseasePortalFields
     public static final String TERM_ID_SEARCH = "tiS";
     // contains term, term_id,term_synonym,term_ancestor,term_alt_id
     public static final String TERM_SEARCH = "tS";
+    // contains term, term_id,term_synonym,term_alt_id
+    public static final String TERM_SEARCH_HIGHLIGHT = "tSh";
     // contains termSearch + mpTermForDisease
     public static final String TERM_SEARCH_FOR_DISEASE = "tsD";
     // contains termSearch + mpTermForSSDisease
