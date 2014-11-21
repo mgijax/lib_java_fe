@@ -66,6 +66,7 @@ public class DiseasePortalFields
     
     // term
     public static final String TERM = "term";
+    public static final String TERM_GROUP = "termGroup";
     public static final String TERM_ID = "termId";
     public static final String TERM_ID_GROUP = "termIdGroup";
     public static final String TERM_TYPE = "termType";
