@@ -45,6 +45,10 @@ public class DiseasePortalFields
 	public static final String MARKER_DISEASE_REF_COUNT = "markerDiseaseRefCount";
 	public static final String MARKER_IMSR_COUNT = "markerIMSRCount";
 	
+	// filterable fields (includes all feature types for a marker's
+	// HomoloGene cluster)
+	public static final String FILTERABLE_FEATURE_TYPES = "filterableFeatureTypes";
+
 	// marker sort fields
 	public static final String BY_MARKER_SYMBOL = "byMarkerSymbol";
 	public static final String BY_MARKER_TYPE = "byMarkerType";
