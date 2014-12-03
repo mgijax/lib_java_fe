@@ -45,6 +45,10 @@ public class DiseasePortalFields
 	public static final String MARKER_DISEASE_REF_COUNT = "markerDiseaseRefCount";
 	public static final String MARKER_IMSR_COUNT = "markerIMSRCount";
 	
+	// filterable fields (includes all feature types for a marker's
+	// HomoloGene cluster)
+	public static final String FILTERABLE_FEATURE_TYPES = "filterableFeatureTypes";
+
 	// marker sort fields
 	public static final String BY_MARKER_SYMBOL = "byMarkerSymbol";
 	public static final String BY_MARKER_TYPE = "byMarkerType";
@@ -66,6 +70,7 @@ public class DiseasePortalFields
     
     // term
     public static final String TERM = "term";
+    public static final String TERM_GROUP = "termGroup";
     public static final String TERM_ID = "termId";
     public static final String TERM_ID_GROUP = "termIdGroup";
     public static final String TERM_TYPE = "termType";
@@ -100,6 +105,8 @@ public class DiseasePortalFields
     public static final String TERM_ID_SEARCH = "tiS";
     // contains term, term_id,term_synonym,term_ancestor,term_alt_id
     public static final String TERM_SEARCH = "tS";
+    // contains term, term_id,term_synonym,term_alt_id
+    public static final String TERM_SEARCH_HIGHLIGHT = "tSh";
     // contains termSearch + mpTermForDisease
     public static final String TERM_SEARCH_FOR_DISEASE = "tsD";
     // contains termSearch + mpTermForSSDisease

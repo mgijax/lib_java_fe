@@ -24,6 +24,7 @@ public class IndexConstants {
     public static final String MRK_TERM_ID              = "markerTermID";
     public static final String MRK_TERM_ID_FOR_GXD      = "markerTermIDForGXD";
     public static final String MRK_BY_SYMBOL            = "byMrkSymbol";
+    public static final String MRK_FEATURE_TYPE		= "featureType";
 
     // Allele
     public static final String ALL_KEY                  = "alleleKey";
