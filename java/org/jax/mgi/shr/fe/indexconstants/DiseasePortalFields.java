@@ -6,6 +6,7 @@ public class DiseasePortalFields
 
 	//cluster
 	public static final String HOMOLOGENE_ID = "homologeneId";
+	public static final String HOMOLOGY_SOURCE = "homologySource";
 	public static final String GRID_CLUSTER_KEY = "gridClusterKey";
 	public static final String GRID_MOUSE_SYMBOLS = "gridMouseSymbols";
 	public static final String GRID_HUMAN_SYMBOLS = "gridHumanSymbols";
@@ -13,6 +14,12 @@ public class DiseasePortalFields
 	public static final String GRID_BY_HUMAN_LOCATION = "gridByHumanLocation";	
 	public static final String GRID_BY_MOUSE_LOCATION = "gridByMouseLocation";
 	
+	// Homology cluster key is used for linking to cluster pages; This is
+	// separate from the grid cluster key, because that one is used for
+	// grouping results and we do not want to group in markers that have
+	// no annotations for the grid.  (It causes many marker symbols to 
+	// disappear from the grid.)
+	public static final String HOMOLOGY_CLUSTER_KEY = "homologyClusterKey";
 	
 	//marker
 	public static final String MARKER_KEY = "markerKey";

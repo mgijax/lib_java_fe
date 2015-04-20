@@ -168,6 +168,8 @@ public class IndexConstants {
     public static final String TERM                 = "term";
     public static final String ANNOTATED_TERM_ID    = "annotatedTermID";
     public static final String BY_GENOTYPE_TERM     = "byGenotypeTerm";
+    public static final String BY_EVIDENCE_CODE		= "byEvidenceCode";
+    public static final String BY_EVIDENCE_TERM		= "byEvidenceTerm";
 
     // Genotypes
     public static final String GENOTYPE_KEY	    = "genotypeKey";
@@ -253,6 +255,10 @@ public class IndexConstants {
     public static final String SCORE_SORTABLE = "score_sortable";
     public static final String SCORE_FILTERABLE = "score_filterable";
     public static final String MATURE_TRANSCRIPT = "matureTranscript";
+    public static final String PARTICIPANT_PRODUCT_ID = "participantProductID";
+    public static final String ORGANIZER_PRODUCT_ID = "organizerProductID";
+    public static final String ALGORITHM = "algorithm";
+    public static final String OTHER_REFERENCES = "otherReferences";
     public static final String NOTES = "notes";
     public static final String PROPERTIES = "properties";
     public static final String BY_MARKER_SYMBOL = "byMarkerSymbol";
