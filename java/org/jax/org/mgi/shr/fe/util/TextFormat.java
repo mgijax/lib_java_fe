@@ -64,4 +64,8 @@ public class TextFormat
         if (s == null) {return "";}
         return superscript(s, "<", ">");
     }
+    
+    public String superscriptHTML(String s) {
+    	return superscript(s).replace("</SUP>", "</span>").replace("<SUP>", "<span class='superscript'>");
+    }
 }

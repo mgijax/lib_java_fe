@@ -105,6 +105,9 @@ public class IndexConstants {
     public static final String REF_TITLE_ABSTRACT_UNSTEMMED = "titleAbstractUnStemmed";
     public static final String REF_DISEASE_ID = "diseaseId";
     public static final String REF_DISEASE_RELEVANT_MARKER_ID = "diseaseRelevantMarkerId";
+    public static final String REF_GO_MARKER_ID	    = "goMarkerId";
+    public static final String REF_PHENO_MARKER_ID  = "phenoMarkerId";
+    public static final String REF_GROUPING         = "grouping";
 
     // Autocomplete Fields
     public static final String AC_FOR_GXD            = "forGXD";
@@ -170,6 +173,8 @@ public class IndexConstants {
     public static final String BY_GENOTYPE_TERM     = "byGenotypeTerm";
     public static final String BY_EVIDENCE_CODE		= "byEvidenceCode";
     public static final String BY_EVIDENCE_TERM		= "byEvidenceTerm";
+    public static final String EVIDENCE_CATEGORY	= "evidenceCategory";
+    public static final String SLIM_TERM		= "slimTerm";
 
     // Genotypes
     public static final String GENOTYPE_KEY	    = "genotypeKey";
