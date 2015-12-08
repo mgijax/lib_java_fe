@@ -53,31 +53,7 @@ public class IndexConstants {
     public static final String ALL_TYPE_SORT            = "alleleTypeSort";
     public static final String ALL_DRIVER_SORT          = "driverSort";
     public static final String ALL_REFERENCE_COUNT_SORT = "referenceCountSort";
-    
-    // Cre Allele
-    public static final String CRE_ALL_SYSTEM                   = "system";
-    public static final String CRE_ALL_SYSTEM_KEY               = "alleleSystemKey";
-    public static final String CRE_SYSTEM_KEY                   = "systemKey";
-    public static final String CRE_ASSAY_RESULT_KEY             = "resultKey";
-    public static final String CRE_DETECTED_COUNT               = "detectedCount";
-    public static final String CRE_NOT_DETECTED_COUNT           = "notDetectedCount";
-    public static final String CRE_DETECTED_TOTAL_COUNT         = "detectedTotalCount";
 
-    // Cre sorting (column names)
-    public static final String CRE_BY_STRUCTURE                 = "byStructure";
-    public static final String CRE_BY_AGE                       = "byAge";
-    public static final String CRE_BY_LEVEL                     = "byLevel";
-    public static final String CRE_BY_PATTERN                   = "byPattern";
-    public static final String CRE_BY_JNUM_ID                   = "byJnumID";
-    public static final String CRE_BY_ASSAY_TYPE                = "byAssayType";
-    public static final String CRE_BY_REPORTER_GENE             = "byReporterGene";
-    public static final String CRE_BY_DETECTION_METHOD          = "byDetectionMethod";
-    public static final String CRE_BY_ASSAY_NOTE                = "byAssayNote";
-    public static final String CRE_BY_ALLELIC_COMPOSITION       = "byAllelicComposition";
-    public static final String CRE_BY_SEX                       = "bySex";
-    public static final String CRE_BY_SPECIMEN_NOTE             = "bySpecimenNote";
-    public static final String CRE_BY_RESULT_NOTE               = "byResultNote";
-    
     // Reference
     public static final String REF_KEY              = "referenceKey";
     public static final String REF_ID               = "accID";
@@ -173,6 +149,7 @@ public class IndexConstants {
     public static final String BY_GENOTYPE_TERM     = "byGenotypeTerm";
     public static final String BY_EVIDENCE_CODE		= "byEvidenceCode";
     public static final String BY_EVIDENCE_TERM		= "byEvidenceTerm";
+    public static final String BY_ISOFORM			= "byIsoform";
     public static final String EVIDENCE_CATEGORY	= "evidenceCategory";
     public static final String SLIM_TERM		= "slimTerm";
 
@@ -197,7 +174,7 @@ public class IndexConstants {
     public static final String BY_DEFAULT           = "byDefaultSort";
 
     // Structure Auto Complete
-    public static final String STRUCTUREAC_KEY = "structureKey"; 
+    public static final String STRUCTUREAC_KEY = "structureKey";
     public static final String STRUCTUREAC_STRUCTURE = "structure";
     public static final String STRUCTUREAC_SYNONYM = "synonym";
     public static final String STRUCTUREAC_QUERYTEXT = "queryText";
@@ -206,7 +183,7 @@ public class IndexConstants {
     public static final String STRUCTUREAC_HAS_CRE = "hasCre";
     public static final String STRUCTUREAC_START_STAGE = "startStage";
     public static final String STRUCTUREAC_END_STAGE = "endStage";
-    
+
     // Vocab Term Auto Complete Fields
     public static final String VOCABAC_KEY = "uniqueKey";
     public static final String VOCABAC_TERM_KEY = "termKey";
@@ -222,7 +199,7 @@ public class IndexConstants {
     public static final String VOCABAC_MARKER_COUNT = "markerCount";
     public static final String VOCABAC_EXPRESSION_MARKER_COUNT = "expressionMarkerCount";
     public static final String VOCABAC_GXDLIT_MARKER_COUNT = "gxdlitMarkerCount";
-    
+
     // Homology constants
     public static final String HOMOLOGY_ID = "homologyID";
     public static final String HOMOLOGY_KEY = "homologyKey";
@@ -233,7 +210,7 @@ public class IndexConstants {
 
     // ordering of records (not specific to actual DNA/Poly sequences)
     public static final String SEQUENCE_NUM = "sequenceNum";
-    
+
     // locations
     public static final String START_COORD = "startCoord";
     public static final String END_COORD = "endCoord";

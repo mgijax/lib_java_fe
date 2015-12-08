@@ -1,44 +1,57 @@
 package org.jax.mgi.shr.fe.indexconstants;
 
-import java.util.LinkedHashMap;
-import java.util.Map;
 
 /**
  * Fields specific to cre indices
  */
 public class CreFields 
 {
-	/* 
-	 * These fields map directly to highlightable systems on the Cre query.
-	 * Must be in sync with database values
-	 *  */
-	public static Map<String,String> SYSTEM_FIELDS = new LinkedHashMap<String,String>();
-	static
-	{
-        // init SYSTEM fields
-    	SYSTEM_FIELDS.put("adipose tissue","adiposeTissue");
-    	SYSTEM_FIELDS.put("alimentary system","alimentarySystem");
-        SYSTEM_FIELDS.put("branchial arches","brainchialArches");
-        SYSTEM_FIELDS.put("cardiovascular system","cardiovascularSystem");
-        SYSTEM_FIELDS.put("cavities and their linings","cavitiesAndLinings");
-        SYSTEM_FIELDS.put("early embryo","earlyEmbryo");
-        SYSTEM_FIELDS.put("embryo-other","embryoOther");
-        SYSTEM_FIELDS.put("endocrine system","endocrineSystem");
-        SYSTEM_FIELDS.put("extraembryonic component","extraembryonicComponent");
-        SYSTEM_FIELDS.put("head","head");
-        SYSTEM_FIELDS.put("hemolymphoid system","hemolymphoidSystem");
-        SYSTEM_FIELDS.put("integumental system","integumentalSystem");
-        SYSTEM_FIELDS.put("limbs","limbs");
-        SYSTEM_FIELDS.put("liver and biliary system","liverAndBiliarySystem");
-        SYSTEM_FIELDS.put("mesenchyme","mesenchyme");
-        SYSTEM_FIELDS.put("muscle","muscle");
-        SYSTEM_FIELDS.put("nervous system","nervousSystem");
-        SYSTEM_FIELDS.put("postnatal-other","postnatalOther");
-        SYSTEM_FIELDS.put("renal and urinary system","renalAndUrinarySystem");
-        SYSTEM_FIELDS.put("reproductive system","reproductiveSystem");
-        SYSTEM_FIELDS.put("respiratory system","respiratorySystem");
-        SYSTEM_FIELDS.put("sensory organs","sensoryOrgans");
-        SYSTEM_FIELDS.put("skeletal system","sekeletalSystem");
-        SYSTEM_FIELDS.put("tail","tail");
-	}
+
+    // Cre Allele
+    public static final String DETECTED_COUNT               = "detectedCount";
+    public static final String NOT_DETECTED_COUNT           = "notDetectedCount";
+    public static final String ALL_SYMBOL_SORT          	= "byAllSymbol";
+    public static final String ALL_TYPE_SORT            	= "alleleTypeSort";
+    public static final String ALL_SYSTEM_DETECTED         	= "alleleSystemDetected";
+    public static final String ALL_SYSTEM_NOT_DETECTED     	= "alleleSystemNotDetected";
+    
+    // Cre driver
+    public static final String DRIVER                       = "driver";
+    public static final String DRIVER_DISPLAY               = "driverDisplay";
+    public static final String DRIVER_SORT                  = "byDriver";
+    public static final String ALL_REFERENCE_COUNT_SORT		= "byReferenceCount";
+    public static final String INDUCER						= "inducer";
+    
+    // Cre system
+    public static final String SYSTEM                   	= "system";
+    public static final String ALL_SYSTEM_KEY               = "alleleSystemKey";
+    public static final String SYSTEM_KEY                   = "systemKey";
+    // system level highlight group key
+    public static final String SYSTEM_HL_GROUP				= "systemHlGroup";
+    
+    
+    //Cre structures
+    public static final String DETECTED						= "detected";
+    public static final String STRUCTURE_SEARCH				= "structureSearch";
+    public static final String ASSAY_RESULT_KEY             = "resultKey";
+    public static final String ANNOTATED_STRUCTURE			= "annotatedStructure";
+    public static final String ANNOTATED_STRUCTURE_KEY		= "annotatedStructureKey";
+    public static final String STRUCTURE_ID					= "structureId";
+    
+
+    // Cre sorting (column names)
+    public static final String BY_STRUCTURE                 = "byStructure";
+    public static final String BY_AGE                       = "byAge";
+    public static final String BY_LEVEL                     = "byLevel";
+    public static final String BY_PATTERN                   = "byPattern";
+    public static final String BY_JNUM_ID                   = "byJnumID";
+    public static final String BY_ASSAY_TYPE                = "byAssayType";
+    public static final String BY_REPORTER_GENE             = "byReporterGene";
+    public static final String BY_DETECTION_METHOD          = "byDetectionMethod";
+    public static final String BY_ASSAY_NOTE                = "byAssayNote";
+    public static final String BY_ALLELIC_COMPOSITION       = "byAllelicComposition";
+    public static final String BY_SEX                       = "bySex";
+    public static final String BY_SPECIMEN_NOTE             = "bySpecimenNote";
+    public static final String BY_RESULT_NOTE               = "byResultNote";
+
 }
