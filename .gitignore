@@ -1,5 +1,1 @@
-build
-classes/
-cruise-output/
-fe.jar
-javadocs/
+/bin
