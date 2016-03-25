@@ -8,6 +8,8 @@ public class CreFields
 {
 
     // Cre Allele
+    public static final String DETECTED_COUNT               = "detectedCount";
+    public static final String NOT_DETECTED_COUNT           = "notDetectedCount";
     public static final String ALL_SYMBOL_SORT          	= "byAllSymbol";
     public static final String ALL_TYPE_SORT            	= "alleleTypeSort";
     public static final String ALL_SYSTEM_DETECTED         	= "alleleSystemDetected";
