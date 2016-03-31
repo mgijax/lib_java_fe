@@ -1,4 +1,4 @@
-package org.jax.org.mgi.shr.fe.util;
+package org.jax.mgi.shr.fe.util;
 
 // shared utility functions
 public class TextFormat 
