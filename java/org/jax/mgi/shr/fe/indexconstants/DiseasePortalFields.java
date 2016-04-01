@@ -86,13 +86,21 @@ public class DiseasePortalFields
     public static final String DISEASE_REF_COUNT = "diseaseRefCount";
     public static final String TERM_SYNONYM = "tSy";
     public static final String TERM_ANCESTOR = "tA";
+    public static final String TERM_ANCESTOR_TEXT = "tAtext";
+    public static final String TERM_ANCESTOR_ID = "tAid";
     public static final String TERM_ALT_ID = "altTermId";
     public static final String MP_TERM_FOR_HUMAN_DISEASE = "mpHD";
     public static final String MP_TERM_FOR_SS_DISEASE = "mpSSD";
+    public static final String MP_TERM_FOR_SS_DISEASE_TEXT = "mpSSDtext";
+    public static final String MP_TERM_FOR_SS_DISEASE_ID = "mpSSDid";
     public static final String MP_TERM_FOR_DISEASE = "mpD";
+    public static final String MP_TERM_FOR_DISEASE_TEXT = "mpDtext";
+    public static final String MP_TERM_FOR_DISEASE_ID = "mpDid";
     public static final String MP_TERM_FOR_PHENOTYPE = "mpP";
     public static final String OMIM_TERM_FOR_PHENOTYPE = "dP";
     public static final String OMIM_TERM_FOR_DISEASE = "dD";
+    public static final String OMIM_TERM_FOR_DISEASE_TEXT = "dDtext";
+    public static final String OMIM_TERM_FOR_DISEASE_ID = "dDid";
     public static final String DISEASE_MODEL_COUNTS = "diseaseModelCounts";
     public static final String TERM_MOUSESYMBOL = "termMouseSymbol";
     public static final String TERM_HUMANSYMBOL = "termHumanSymbol";
@@ -112,12 +120,24 @@ public class DiseasePortalFields
     public static final String TERM_ID_SEARCH = "tiS";
     // contains term, term_id,term_synonym,term_ancestor,term_alt_id
     public static final String TERM_SEARCH = "tS";
+    // contains term, term_synonym, term_ancestor (terms and synonyms only)
+    public static final String TERM_SEARCH_TEXT = "tStext";
+    // contains term_id, term_ancestor ID, term_alt_id (IDs only)
+    public static final String TERM_SEARCH_ID = "tSid";
     // contains term, term_id,term_synonym,term_alt_id
     public static final String TERM_SEARCH_HIGHLIGHT = "tSh";
     // contains termSearch + mpTermForDisease
     public static final String TERM_SEARCH_FOR_DISEASE = "tsD";
+    // contains termSearch + mpTermForDisease (terms and synonyms only)
+    public static final String TERM_SEARCH_FOR_DISEASE_TEXT = "tsDtext";
+    // contains termSearch + mpTermForDisease (IDs only)
+    public static final String TERM_SEARCH_FOR_DISEASE_ID = "tsDid";
     // contains termSearch + mpTermForSSDisease
     public static final String TERM_SEARCH_FOR_GRID_COLUMNS = "tsG";
+    // contains termSearch + mpTermForSSDisease (terms and synonyms only)
+    public static final String TERM_SEARCH_FOR_GRID_COLUMNS_TEXT = "tsGtext";
+    // contains termSearch + mpTermForSSDisease (IDs only)
+    public static final String TERM_SEARCH_FOR_GRID_COLUMNS_ID = "tsGid";
     
     public static final String UNIQUE_KEY = "uniqueKey";
 }
