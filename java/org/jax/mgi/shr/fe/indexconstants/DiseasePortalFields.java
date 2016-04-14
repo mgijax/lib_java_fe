@@ -4,6 +4,10 @@ public class DiseasePortalFields
 {
 	 // Disease Portal Index
 
+	// uniquely identifies a "basic search unit" (BSU) for the grid -- a genocluster
+	// for mouse data, or a marker/disease pair for human data
+	public static final String GRID_KEY = "gridKey";
+
 	//cluster
 	public static final String HOMOLOGENE_ID = "homologeneId";
 	public static final String HOMOLOGY_SOURCE = "homologySource";
@@ -13,6 +17,7 @@ public class DiseasePortalFields
 
 	public static final String GRID_BY_HUMAN_LOCATION = "gridByHumanLocation";	
 	public static final String GRID_BY_MOUSE_LOCATION = "gridByMouseLocation";
+	public static final String IS_CONDITIONAL = "isConditional";
 	
 	// Homology cluster key is used for linking to cluster pages; This is
 	// separate from the grid cluster key, because that one is used for
