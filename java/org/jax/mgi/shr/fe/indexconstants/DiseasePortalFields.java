@@ -14,6 +14,7 @@ public class DiseasePortalFields
 	public static final String GRID_CLUSTER_KEY = "gridClusterKey";
 	public static final String GRID_MOUSE_SYMBOLS = "gridMouseSymbols";
 	public static final String GRID_HUMAN_SYMBOLS = "gridHumanSymbols";
+	public static final String ALLELE_PAIRS = "allelePairs";
 
 	public static final String GRID_BY_HUMAN_LOCATION = "gridByHumanLocation";	
 	public static final String GRID_BY_MOUSE_LOCATION = "gridByMouseLocation";
