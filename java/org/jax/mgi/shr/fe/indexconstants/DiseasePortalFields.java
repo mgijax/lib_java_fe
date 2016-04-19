@@ -119,7 +119,7 @@ public class DiseasePortalFields
     public static final String BY_TERM_NAME = "byTermName";
     public static final String BY_TERM_DAG = "byTermDag";
     public static final String BY_MP_HEADER = "byMpHeader";
-
+    public static final String BY_TERM_HEADER = "byTermHeader"; 
     
     // aggregate term fields
     // contains term_id + term_alt_id
