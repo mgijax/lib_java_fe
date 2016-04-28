@@ -110,6 +110,8 @@ public class DiseasePortalFields
     public static final String DISEASE_MODEL_COUNTS = "diseaseModelCounts";
     public static final String TERM_MOUSESYMBOL = "termMouseSymbol";
     public static final String TERM_HUMANSYMBOL = "termHumanSymbol";
+    public static final String HPO_TEXT = "hpoText";
+    public static final String HPO_ID = "hpoId";
     
     // in annotation index
     public static final String TERM_QUALIFIER = "qualifier";
