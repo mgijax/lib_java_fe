@@ -54,6 +54,8 @@ public class DiseasePortalFields
 	public static final String MARKER_FEATURE_TYPE = "featureType";
 	public static final String MARKER_DISEASE = "markerDisease";
 	public static final String MARKER_SYSTEM = "markerSystem";
+	public static final String MOUSE_MARKER_SYSTEM = "mouseMarkerSystem";
+	public static final String HUMAN_MARKER_SYSTEM = "humanMarkerSystem";
 	public static final String MARKER_ALL_REF_COUNT = "markerAllRefCount";
 	public static final String MARKER_DISEASE_REF_COUNT = "markerDiseaseRefCount";
 	public static final String MARKER_IMSR_COUNT = "markerIMSRCount";
