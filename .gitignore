@@ -1,5 +1,9 @@
 classes/
 cruise-output/
+unittest-results/
+dist/
+bin/
+classes/
 fe.jar
 javadocs/
 Configuration

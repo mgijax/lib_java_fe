@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!-- This XML script is used to build the lib_java_fe product.
 -->
-<project name="lib_java_fe" default="compile" basedir=".">
+<project name="lib_java_fe" default="jar" basedir=".">
 
    <!-- Get the system environment variables and define any other system
         properties needed by the build.
@@ -14,9 +14,19 @@
    <property name="test.dir" value="test"/>
    <property name="doc.dir" value="javadocs"/>
    <property name="classes.dir" value="classes"/>
+   <property name="dist.dir" location="dist"/>
+	
+   <property name="unittestoutput.dir" location="unittest-results" />
 
+   <path id="tests.path">
+		<fileset includes="*.jar" dir="lib"/>
+		<pathelement location="${classes.dir}" />
+   </path>
+	
+	
    <target name="prepare">
       <mkdir dir="${classes.dir}"/>
+   	  <mkdir dir="${unittestoutput.dir}"/>
    </target>
 
    <target name="env" description="show configuration settings">
@@ -29,7 +39,8 @@
    <target name="clean" description="Remove all generated files.">
       <delete dir="${classes.dir}"/>
       <delete dir="${doc.dir}"/>
-      <delete file="${jar.name}.jar"/>
+      <delete dir="${dist.dir}"/>
+   	  <delete dir="${unittestoutput.dir}"/>
    </target>
 
    <target name="compile" depends="prepare, env"
@@ -39,12 +50,33 @@
 
    <target name="compile.test" depends="compile"
            description="Compiles all test source code.">
-      <javac classpath="${classpath}" srcdir="${test.dir}" destdir="${classes.dir}"/>
+      <javac classpath="${classpath}" srcdir="${test.dir}" destdir="${classes.dir}">
+      	<classpath>
+      			<fileset dir="lib">
+      				<include name="**/*.jar"/>
+      			</fileset>
+      	</classpath>
+   	  </javac>
+   </target>
+	
+   <target name="test" depends="compile, compile.test" description="Run unit tests">
+       <junit fork="yes" forkmode="once" failureproperty="junit.failure" 
+   	  			printsummary="yes" >
+   	  		<classpath>
+   				<path refid="tests.path" />
+   			</classpath>
+   	  		<formatter type="xml" usefile="true" />
+   			<batchtest todir="${unittestoutput.dir}">
+   				<fileset dir="${classes.dir}" includes="**/*Test.class">
+   				</fileset>
+   			</batchtest>
+   	  	</junit>
+   	  	<fail message="Test failure detected, check test results under ${unittestoutput.dir}" if="junit.failure" />
    </target>
 
-   <target name="jar" depends="compile"
+   <target name="jar" depends="compile, test"
            description="Generates a jar.">
-      <jar jarfile="${jar.name}.jar"
+      <jar jarfile="${dist.dir}/${jar.name}.jar"
            basedir="${classes.dir}"
            excludes="**/*Test.class"/>
    </target>
@@ -80,7 +112,7 @@
 
    <target name="install" description="Copies the product jar/javadocs into the install directory"
            depends="jar, javadocs">
-      <copy file="${jar.name}.jar" todir="${install.dir}"/>
+      <copy file="${dist.dir}/${jar.name}.jar" todir="${install.dir}"/>
       <copy todir="${install.dir}/javadocs/${jar.name}" overwrite="true">
          <fileset dir="${doc.dir}"/>
       </copy>
@@ -92,9 +124,9 @@
       <exec executable="rm">
          <arg line="-f ../${jar.name}.jar"/>
       </exec>
-      <echo message="ln -s ${ant.project.name}/${jar.name}.jar ../${jar.name}.jar"/>
+      <echo message="ln -s ${dist.dir}/${jar.name}.jar ../${jar.name}.jar"/>
       <exec executable="ln">
-         <arg line="-s ${ant.project.name}/${jar.name}.jar ../${jar.name}.jar"/>
+         <arg line="-s ${dist.dir}/${jar.name}.jar ../${jar.name}.jar"/>
       </exec>
    </target>
 

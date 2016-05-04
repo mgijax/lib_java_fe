@@ -16,4 +16,8 @@ public class ImagePaneFields {
     public static final String PANE_X 				= "paneX";
     public static final String PANE_Y 				= "paneY";
     public static final String SPECIMEN_LABEL		= "specimenLabel";
+    public static final String BY_ASSAY_TYPE		= "byAssayType";
+    public static final String BY_MARKER			= "byMarker";
+    public static final String BY_HYBRIDIZATION_ASC		= "byHybridizationAsc";
+    public static final String BY_HYBRIDIZATION_DESC		= "byHybridizationDesc";
 }
