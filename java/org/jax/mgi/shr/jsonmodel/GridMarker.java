@@ -1,4 +1,4 @@
-package org.jax.org.mgi.shr.jsonmodel;
+package org.jax.mgi.shr.jsonmodel;
 
 import java.io.Serializable;
 
