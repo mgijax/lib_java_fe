@@ -3,139 +3,140 @@
 -->
 <project name="lib_java_fe" default="jar" basedir=".">
 
-   <!-- Get the system environment variables and define any other system
-        properties needed by the build.
-   -->
-   <property environment="env"/>
-   <property name="jar.name" value="fe"/>
-   <property name="classpath" value=""/>
+	<!-- Get the system environment variables and define any other system
+		  properties needed by the build.
+	-->
+	<property environment="env"/>
+	<property name="jar.name" value="fe"/>
+	<property name="classpath" value=""/>
 	
-   <property name="src.dir" value="java"/>
-   <property name="test.dir" value="test"/>
-   <property name="doc.dir" value="javadocs"/>
-   <property name="classes.dir" value="classes"/>
-   <property name="dist.dir" location="dist"/>
+	<property name="src.dir" value="java"/>
+	<property name="test.dir" value="test"/>
+	<property name="doc.dir" value="javadocs"/>
+	<property name="classes.dir" value="classes"/>
+	<property name="dist.dir" location="dist"/>
 	
-   <property name="unittestoutput.dir" location="unittest-results" />
+	<property name="unittestoutput.dir" location="unittest-results" />
 
-   <path id="tests.path">
+	<path id="tests.path">
 		<fileset includes="*.jar" dir="lib"/>
 		<pathelement location="${classes.dir}" />
-   </path>
+	</path>
 	
 	
-   <target name="prepare">
-      <mkdir dir="${classes.dir}"/>
-   	  <mkdir dir="${unittestoutput.dir}"/>
-   </target>
+	<target name="prepare">
+		<mkdir dir="${dist.dir}"/>
+		<mkdir dir="${classes.dir}"/>
+		<mkdir dir="${unittestoutput.dir}"/>
+	</target>
 
-   <target name="env" description="show configuration settings">
-      <echo message="java home is ${java.home}"/>
-      <echo message="source directory is ${src.dir}"/>
-      <echo message="class directory is ${classes.dir}"/>
-      <echo message="classpath is ${classpath}"/>
-   </target>
+	<target name="env" description="show configuration settings">
+		<echo message="java home is ${java.home}"/>
+		<echo message="source directory is ${src.dir}"/>
+		<echo message="class directory is ${classes.dir}"/>
+		<echo message="classpath is ${classpath}"/>
+	</target>
 
-   <target name="clean" description="Remove all generated files.">
-      <delete dir="${classes.dir}"/>
-      <delete dir="${doc.dir}"/>
-      <delete dir="${dist.dir}"/>
-   	  <delete dir="${unittestoutput.dir}"/>
-   </target>
+	<target name="clean" description="Remove all generated files.">
+		<delete dir="${classes.dir}"/>
+		<delete dir="${doc.dir}"/>
+		<delete dir="${dist.dir}"/>
+		  <delete dir="${unittestoutput.dir}"/>
+	</target>
 
-   <target name="compile" depends="prepare, env"
-           description="Compiles all source code.">
-      <javac classpath="${classpath}" srcdir="${src.dir}" destdir="${classes.dir}" debug="true"/>
-   </target>
+	<target name="compile" depends="prepare, env"
+			  description="Compiles all source code.">
+		<javac classpath="${classpath}" srcdir="${src.dir}" destdir="${classes.dir}" debug="true" includeantruntime="false" />
+	</target>
 
-   <target name="compile.test" depends="compile"
-           description="Compiles all test source code.">
-      <javac classpath="${classpath}" srcdir="${test.dir}" destdir="${classes.dir}">
-      	<classpath>
-      			<fileset dir="lib">
-      				<include name="**/*.jar"/>
-      			</fileset>
-      	</classpath>
-   	  </javac>
-   </target>
+	<target name="compile.test" depends="compile"
+			  description="Compiles all test source code.">
+		<javac classpath="${classpath}" srcdir="${test.dir}" destdir="${classes.dir}">
+			<classpath>
+					<fileset dir="lib">
+						<include name="**/*.jar"/>
+					</fileset>
+			</classpath>
+		  </javac>
+	</target>
 	
-   <target name="test" depends="compile, compile.test" description="Run unit tests">
-       <junit fork="yes" forkmode="once" failureproperty="junit.failure" 
-   	  			printsummary="yes" >
-   	  		<classpath>
-   				<path refid="tests.path" />
-   			</classpath>
-   	  		<formatter type="xml" usefile="true" />
-   			<batchtest todir="${unittestoutput.dir}">
-   				<fileset dir="${classes.dir}" includes="**/*Test.class">
-   				</fileset>
-   			</batchtest>
-   	  	</junit>
-   	  	<fail message="Test failure detected, check test results under ${unittestoutput.dir}" if="junit.failure" />
-   </target>
+	<target name="test" depends="compile, compile.test" description="Run unit tests">
+		 <junit fork="yes" forkmode="once" failureproperty="junit.failure" 
+		  			printsummary="yes" >
+		  		<classpath>
+					<path refid="tests.path" />
+				</classpath>
+		  		<formatter type="xml" usefile="true" />
+				<batchtest todir="${unittestoutput.dir}">
+					<fileset dir="${classes.dir}" includes="**/*Test.class">
+					</fileset>
+				</batchtest>
+		  	</junit>
+		  	<fail message="Test failure detected, check test results under ${unittestoutput.dir}" if="junit.failure" />
+	</target>
 
-   <target name="jar" depends="compile, test"
-           description="Generates a jar.">
-      <jar jarfile="${dist.dir}/${jar.name}.jar"
-           basedir="${classes.dir}"
-           excludes="**/*Test.class"/>
-   </target>
+	<target name="jar" depends="compile, test"
+			  description="Generates a jar.">
+		<jar jarfile="${dist.dir}/${jar.name}.jar"
+			  basedir="${classes.dir}"
+			  excludes="**/*Test.class"/>
+	</target>
 
-   <target name="javadocs"
-           description="Generates the javadocs in the 'javadocs' directory.">
-      <mkdir dir="${doc.dir}"/>
-      <javadoc packagenames="org.jax.mgi.*"
-               classpath="${classpath}"
-               sourcepath="${src.dir}"
-               destdir="${doc.dir}"
-               author="true"
-               version="true"
-               use="true">
-         <tag name="Is" description="Is:" />
-         <tag name="Has" description="Has:" />
-         <tag name="Does" description="Does:" />
-         <tag name="Assumes" description="Assumes:" />
-         <tag name="Effects" description="Effects:" />
-         <tag name="Notes" description="Notes: "/>
-         <tag name="Company" description="Company:" />
-         <tag name="Abstract" description="Abstract:" />
-         <tag name="is" description="Is:" />
-         <tag name="has" description="Has:" />
-         <tag name="does" description="Does:" />
-         <tag name="assumes" description="Assumes:" />
-         <tag name="effects" description="Effects:" />
-         <tag name="notes" description="Notes: "/>
-         <tag name="company" description="Company:" />
-         <tag name="abstract" description="Abstract:" />
-      </javadoc>
-   </target>
+	<target name="javadocs"
+			  description="Generates the javadocs in the 'javadocs' directory.">
+		<mkdir dir="${doc.dir}"/>
+		<javadoc packagenames="org.jax.mgi.*"
+					classpath="${classpath}"
+					sourcepath="${src.dir}"
+					destdir="${doc.dir}"
+					author="true"
+					version="true"
+					use="true">
+			<tag name="Is" description="Is:" />
+			<tag name="Has" description="Has:" />
+			<tag name="Does" description="Does:" />
+			<tag name="Assumes" description="Assumes:" />
+			<tag name="Effects" description="Effects:" />
+			<tag name="Notes" description="Notes: "/>
+			<tag name="Company" description="Company:" />
+			<tag name="Abstract" description="Abstract:" />
+			<tag name="is" description="Is:" />
+			<tag name="has" description="Has:" />
+			<tag name="does" description="Does:" />
+			<tag name="assumes" description="Assumes:" />
+			<tag name="effects" description="Effects:" />
+			<tag name="notes" description="Notes: "/>
+			<tag name="company" description="Company:" />
+			<tag name="abstract" description="Abstract:" />
+		</javadoc>
+	</target>
 
-   <target name="install" description="Copies the product jar/javadocs into the install directory"
-           depends="jar, javadocs">
-      <copy file="${dist.dir}/${jar.name}.jar" todir="${install.dir}"/>
-      <copy todir="${install.dir}/javadocs/${jar.name}" overwrite="true">
-         <fileset dir="${doc.dir}"/>
-      </copy>
-   </target>
+	<target name="install" description="Copies the product jar/javadocs into the install directory"
+			  depends="jar, javadocs">
+		<copy file="${dist.dir}/${jar.name}.jar" todir="${install.dir}"/>
+		<copy todir="${install.dir}/javadocs/${jar.name}" overwrite="true">
+			<fileset dir="${doc.dir}"/>
+		</copy>
+	</target>
 
-   <target name="link" description="Creates symbolic link"
-           depends="jar">
-      <echo message="rm -f ../${jar.name}.jar"/>
-      <exec executable="rm">
-         <arg line="-f ../${jar.name}.jar"/>
-      </exec>
-      <echo message="ln -s ${dist.dir}/${jar.name}.jar ../${jar.name}.jar"/>
-      <exec executable="ln">
-         <arg line="-s ${dist.dir}/${jar.name}.jar ../${jar.name}.jar"/>
-      </exec>
-   </target>
+	<target name="link" description="Creates symbolic link"
+			  depends="jar">
+		<echo message="rm -f ../${jar.name}.jar"/>
+		<exec executable="rm">
+			<arg line="-f ../${jar.name}.jar"/>
+		</exec>
+		<echo message="ln -s ${dist.dir}/${jar.name}.jar ../${jar.name}.jar"/>
+		<exec executable="ln">
+			<arg line="-s ${dist.dir}/${jar.name}.jar ../${jar.name}.jar"/>
+		</exec>
+	</target>
 
-   <target name="all" depends="clean, jar, javadocs"
-           description="Cleans, cvs compiles, creates jar and generates javadocs."/>
+	<target name="all" depends="clean, jar, javadocs"
+			  description="Cleans, cvs compiles, creates jar and generates javadocs."/>
 
-   <!-- Define product specific targets.
-   -->
-   <target name="buildall" description="Executes task 'all'"
-           depends="all, link">
-   </target>
+	<!-- Define product specific targets.
+	-->
+	<target name="buildall" description="Executes task 'all'"
+			  depends="all, link">
+	</target>
 </project>
