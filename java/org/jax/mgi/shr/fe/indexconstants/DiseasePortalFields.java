@@ -130,6 +130,10 @@ public class DiseasePortalFields
     public static final String TERM_ID_SEARCH = "tiS";
     // contains term, term_id,term_synonym,term_ancestor,term_alt_id
     public static final String TERM_SEARCH = "tS";
+    // contains term, term_synonym, term_ancestor (terms and synonyms only) for highlighting
+    public static final String TERM_TEXT_HIGHLIGHT = "tsHtext";
+    // contains term_id, term_ancestor ID, term_alt_id (IDs only) for highlighting
+    public static final String TERM_ID_HIGHLIGHT = "tsHid";
     // contains term, term_synonym, term_ancestor (terms and synonyms only)
     public static final String TERM_SEARCH_TEXT = "tStext";
     // contains term_id, term_ancestor ID, term_alt_id (IDs only)
