@@ -1,4 +1,4 @@
-package org.jax.org.mgi.shr.fe.util;
+package org.jax.org.mgi.shr.jsonmodel;
 
 import java.io.Serializable;
 
@@ -13,14 +13,16 @@ public class GridMarker implements Serializable {
 	private String primaryID;
 	private String name;
 	private String featureType;
+	private Integer clusterKey;
 	
 	public GridMarker() {}
 	
-	public GridMarker(String symbol, String primaryID, String name, String featureType) {
+	public GridMarker(String symbol, String primaryID, String name, String featureType, Integer clusterKey) {
 		this.symbol = symbol;
 		this.primaryID = primaryID;
 		this.name = name;
 		this.featureType = featureType;
+		this.clusterKey = clusterKey;
 	}
 
 	public String getSymbol() {
@@ -46,5 +48,11 @@ public class GridMarker implements Serializable {
 	}
 	public void setFeatureType(String featureType) {
 		this.featureType = featureType;
+	}
+	public Integer getClusterKey() {
+		return clusterKey;
+	}
+	public void setClusterKey(Integer clusterKey) {
+		this.clusterKey = clusterKey;
 	}
 }
