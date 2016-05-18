@@ -89,6 +89,7 @@ public class DiseasePortalFields
     public static final String TERM_ID = "termId";
     public static final String TERM_ID_GROUP = "termIdGroup";
     public static final String TERM_TYPE = "termType";
+    public static final String LOCATION = "location";
     public static final String VOCAB_NAME = "vocabName";
     public static final String TERM_HEADER = "termHeader";
     public static final String DISEASE_REF_COUNT = "diseaseRefCount";
