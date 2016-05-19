@@ -82,7 +82,10 @@ public class DiseasePortalFields
     // sorts for genotypes
     public static final String BY_GENOCLUSTER = "byGenoCluster";
     
-    
+    // source term (when one annotation is derived from another)
+    public static final String SOURCE_TERM = "sourceTerm";
+    public static final String SOURCE_TERM_ID = "sourceTermId";
+
     // term
     public static final String TERM = "term";
     public static final String TERM_GROUP = "termGroup";
