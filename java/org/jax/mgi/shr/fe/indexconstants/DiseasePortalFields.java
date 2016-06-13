@@ -36,8 +36,12 @@ public class DiseasePortalFields
 	public static final String MARKER_MGI_ID = "markerMgiId";
 	public static final String MARKER_ID = "mI";
 	public static final String MARKER_SYNONYM = "mSy";
+	
 	public static final String ORTHOLOG_ID = "oI";
 	public static final String ORTHOLOG_NOMEN = "oN";
+	public static final String ORTHOLOG_SYMBOL = "oS";
+	public static final String ORTHOLOG_SYNONYM = "oSy";
+	
 	public static final String HUMAN_DISEASE_JOIN_KEY = "humanDiseaseKey";
 	
 	// aggregate marker fields
