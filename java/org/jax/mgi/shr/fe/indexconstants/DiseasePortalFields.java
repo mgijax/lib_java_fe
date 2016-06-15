@@ -127,6 +127,12 @@ public class DiseasePortalFields
     public static final String TERM_QUALIFIER = "qualifier";
     public static final String ANNOTATION_COUNT = "annotCount";
     
+    // expressed component marker data
+    public static final String EC_SYMBOL = "ecSymbol";
+    public static final String EC_NAME = "ecName";
+    public static final String EC_SYNONYM = "ecSynonym";
+    public static final String EC_ID = "ecId";
+    
     // term sorts
     public static final String BY_TERM_NAME = "byTermName";
     public static final String BY_TERM_DAG = "byTermDag";
