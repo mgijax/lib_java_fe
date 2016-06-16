@@ -36,6 +36,7 @@ public class DiseasePortalFields
 	public static final String MARKER_MGI_ID = "markerMgiId";
 	public static final String MARKER_ID = "mI";
 	public static final String MARKER_SYNONYM = "mSy";
+	public static final String MARKER_SYNONYM_SINGLE_TOKEN = "mSySingleToken";
 	
 	public static final String ORTHOLOG_ID = "oI";
 	public static final String ORTHOLOG_NOMEN = "oN";
@@ -131,6 +132,7 @@ public class DiseasePortalFields
     public static final String EC_SYMBOL = "ecSymbol";
     public static final String EC_NAME = "ecName";
     public static final String EC_SYNONYM = "ecSynonym";
+    public static final String EC_SYNONYM_SINGLE_TOKEN = "ecSynonymSingleToken";
     public static final String EC_ID = "ecId";
     
     // term sorts
