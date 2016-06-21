@@ -127,6 +127,7 @@ public class DiseasePortalFields
     // in annotation index
     public static final String TERM_QUALIFIER = "qualifier";
     public static final String ANNOTATION_COUNT = "annotCount";
+    public static final String BACKGROUND_SENSITIVE = "backgroundSensitive";
     
     // expressed component marker data
     public static final String EC_SYMBOL = "ecSymbol";
