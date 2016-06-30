@@ -19,6 +19,7 @@ public class DiseasePortalFields
 	public static final String GRID_BY_HUMAN_LOCATION = "gridByHumanLocation";	
 	public static final String GRID_BY_MOUSE_LOCATION = "gridByMouseLocation";
 	public static final String IS_CONDITIONAL = "isConditional";
+	public static final String IMSR_ALLELES = "imsrAlleles";
 	
 	// Homology cluster key is used for linking to cluster pages; This is
 	// separate from the grid cluster key, because that one is used for
