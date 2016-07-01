@@ -170,6 +170,8 @@ public class DiseasePortalFields
     public static final String TERM_SEARCH_FOR_GRID_COLUMNS_TEXT = "tsGtext";
     // contains termSearch + mpTermForSSDisease (IDs only)
     public static final String TERM_SEARCH_FOR_GRID_COLUMNS_ID = "tsGid";
+
+    public static final String TERM_SEARCH_GENE_UPLOAD = "gene_upload";
     
     public static final String UNIQUE_KEY = "uniqueKey";
 }
