@@ -37,4 +37,5 @@ public class GxdHtFields
 	public static String GENETIC_BACKGROUND = "geneticBackground";
 	public static String STRUCTURE_SEARCH = "structureSearch";
 	public static String MUTATED_GENE = "mutatedGene";
+	public static String RELEVANCY = "relevancy";
 }
