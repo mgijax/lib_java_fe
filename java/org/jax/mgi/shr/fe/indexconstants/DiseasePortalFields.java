@@ -115,10 +115,10 @@ public class DiseasePortalFields
     public static final String MP_TERM_FOR_DISEASE_TEXT = "mpDtext";
     public static final String MP_TERM_FOR_DISEASE_ID = "mpDid";
     public static final String MP_TERM_FOR_PHENOTYPE = "mpP";
-    public static final String OMIM_TERM_FOR_PHENOTYPE = "dP";
-    public static final String OMIM_TERM_FOR_DISEASE = "dD";
-    public static final String OMIM_TERM_FOR_DISEASE_TEXT = "dDtext";
-    public static final String OMIM_TERM_FOR_DISEASE_ID = "dDid";
+    public static final String DISEASE_TERM_FOR_PHENOTYPE = "dP";
+    public static final String DISEASE_TERM_FOR_DISEASE = "dD";
+    public static final String DISEASE_TERM_FOR_DISEASE_TEXT = "dDtext";
+    public static final String DISEASE_TERM_FOR_DISEASE_ID = "dDid";
     public static final String DISEASE_MODEL_COUNTS = "diseaseModelCounts";
     public static final String TERM_MOUSESYMBOL = "termMouseSymbol";
     public static final String TERM_HUMANSYMBOL = "termHumanSymbol";
