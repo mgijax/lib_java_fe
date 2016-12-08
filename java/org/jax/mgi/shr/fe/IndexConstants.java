@@ -181,6 +181,7 @@ public class IndexConstants {
 	public static final String STRUCTUREAC_IS_STRICT_SYNONYM = "isStrictSynonym";
 	public static final String STRUCTUREAC_BY_SYNONYM = "by_synonym";
 	public static final String STRUCTUREAC_HAS_CRE = "hasCre";
+	public static final String STRUCTUREAC_HAS_GXDHT = "hasGxdHT";
 	public static final String STRUCTUREAC_START_STAGE = "startStage";
 	public static final String STRUCTUREAC_END_STAGE = "endStage";
 
