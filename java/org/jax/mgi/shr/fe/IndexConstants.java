@@ -41,7 +41,7 @@ public class IndexConstants {
 	public static final String ALL_PHENO_ID				= "phenoId";
 	public static final String ALL_PHENO_TEXT			= "phenoText";
 	public static final String ALL_NOMEN				= "allNomen";
-	public static final String ALL_HAS_OMIM				= "hasOMIM";
+	public static final String ALL_HAS_DO				= "hasDO";
 	public static final String ALL_IS_CELLLINE			= "isCellLine";
 	public static final String ALL_MI_MARKER_IDS		= "mutationInvolvesMarkerIDs";
 

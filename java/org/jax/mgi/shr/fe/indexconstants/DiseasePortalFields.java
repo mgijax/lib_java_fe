@@ -124,7 +124,7 @@ public class DiseasePortalFields
     public static final String TERM_HUMANSYMBOL = "termHumanSymbol";
     public static final String HPO_TEXT = "hpoText";
     public static final String HPO_ID = "hpoId";
-	public static final String OMIM_ID = "omimId";
+	public static final String DO_ID = "doId";
     
     // in annotation index
     public static final String TERM_QUALIFIER = "qualifier";
