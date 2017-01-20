@@ -9,7 +9,7 @@ public class CreFields
 
     // Cre Allele
     public static final String ALL_SYMBOL_SORT          	= "byAllSymbol";
-    public static final String ALL_TYPE_SORT            	= "alleleTypeSort";
+    public static final String ALL_TYPE_SORT            	= "byAlleleType";
     public static final String ALL_SYSTEM_DETECTED         	= "alleleSystemDetected";
     public static final String ALL_SYSTEM_NOT_DETECTED     	= "alleleSystemNotDetected";
     
