@@ -266,4 +266,13 @@ public class IndexConstants {
 	public static final String CDNA_MARKER_ID = "markerID";
 	public static final String CDNA_SEQUENCE_NUM = "sequenceNum";
 	public static final String CDNA_CLONE = "clone";
+	
+	// probes
+	public static final String PRB_KEY = "probeKey";
+	public static final String PRB_SEGEMENT_TYPE = "segmentType";
+	public static final String PRB_REFERENCE_ID = "referenceID";
+	public static final String PRB_MARKER_ID = "markerID";
+	public static final String PRB_BY_TYPE = "byType";
+	public static final String PRB_BY_NAME = "byName";
+	public static final String PRB_PROBE = "probe";
 }
