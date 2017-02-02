@@ -269,7 +269,7 @@ public class IndexConstants {
 	
 	// probes
 	public static final String PRB_KEY = "probeKey";
-	public static final String PRB_SEGEMENT_TYPE = "segmentType";
+	public static final String PRB_SEGMENT_TYPE = "segmentType";
 	public static final String PRB_REFERENCE_ID = "referenceID";
 	public static final String PRB_MARKER_ID = "markerID";
 	public static final String PRB_BY_TYPE = "byType";
