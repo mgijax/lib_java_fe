@@ -8,17 +8,17 @@ import java.util.List;
  * from the marker detail page and the reference detail/summary page.  This object is used to send
  * the data as JSON into a Solr index and to then represent it in the fewi when the data is pulled back out.
  */
-public class Probe implements Serializable {
+public class MolecularProbe implements Serializable {
 	private String primaryID;
 	private String name;
 	private List<String> collections;
 	private String segmentType;
-	private List<ProbeMarker> markers;
+	private List<MolecularProbeMarker> markers;
 	
-	public Probe() {}
+	public MolecularProbe() {}
 	
-	public Probe(String primaryID, String name, List<String> collections, String segmentType,
-			List<ProbeMarker> markers) {
+	public MolecularProbe(String primaryID, String name, List<String> collections, String segmentType,
+			List<MolecularProbeMarker> markers) {
 		this.primaryID = primaryID;
 		this.name = name;
 		this.collections = collections;
@@ -58,11 +58,11 @@ public class Probe implements Serializable {
 		this.segmentType = segmentType;
 	}
 
-	public List<ProbeMarker> getMarkers() {
+	public List<MolecularProbeMarker> getMarkers() {
 		return markers;
 	}
 
-	public void setMarkers(List<ProbeMarker> markers) {
+	public void setMarkers(List<MolecularProbeMarker> markers) {
 		this.markers = markers;
 	}
 

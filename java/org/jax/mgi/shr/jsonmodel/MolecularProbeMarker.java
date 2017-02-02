@@ -7,22 +7,20 @@ import java.io.Serializable;
  * to send the data as JSON into a Solr index and to then represent it in the fewi
  * when the data is pulled back out.
  */
-public class ProbeMarker implements Serializable {
+public class MolecularProbeMarker implements Serializable {
 	
 	private String symbol;
 	private String primaryID;
 	private boolean isPutative = false;
-	private String chromosome;
-	private String offset;
+	private String location;
 	
-	public ProbeMarker() {}
+	public MolecularProbeMarker() {}
 	
-	public ProbeMarker(String symbol, String primaryID, boolean isPutative, String chromosome, String offset) {
+	public MolecularProbeMarker(String symbol, String primaryID, boolean isPutative, String location) {
 		this.symbol = symbol;
 		this.primaryID = primaryID;
 		this.isPutative = isPutative;
-		this.chromosome = chromosome;
-		this.offset = offset;
+		this.location = location;
 	}
 
 	public String getSymbol() {
@@ -43,33 +41,16 @@ public class ProbeMarker implements Serializable {
 	public void setIsPutative(boolean isPutative) {
 		this.isPutative = isPutative;
 	}
-	public String getChromosome() {
-		return chromosome;
+	public String getLocation() {
+		return location;
 	}
-	public void setChromosome(String chromosome) {
-		this.chromosome = chromosome;
-	}
-	public String getOffset() {
-		return offset;
-	}
-	public void setOffset(String offset) {
-		this.offset = offset;
+	public void setLocation(String location) {
+		this.location = location;
 	}
 	
-	public String getLocation() {
-		StringBuffer sb = new StringBuffer();
-		sb.append(chromosome);
-		if (this.offset != null) {
-			sb.append(" (");
-			sb.append(this.offset);
-			sb.append(" cM)");
-		}
-		return sb.toString();
-	}
-
 	@Override
 	public String toString() {
-		return "CloneMarker [symbol=" + symbol + ", primaryID=" + primaryID + ", isPutative=" + isPutative + "]";
+		return "ProbeMarker [symbol=" + symbol + ", primaryID=" + primaryID + ", isPutative=" + isPutative + "]";
 	}
 
 }
