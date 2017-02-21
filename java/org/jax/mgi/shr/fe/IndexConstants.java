@@ -275,4 +275,9 @@ public class IndexConstants {
 	public static final String PRB_BY_TYPE = "byType";
 	public static final String PRB_BY_NAME = "byName";
 	public static final String PRB_PROBE = "probe";
+	
+	// genetic mapping experiments; also uses MRK_ID and BY_DEFAULT
+	public static final String MLD_EXPERIMENT_KEY = "experimentKey";
+	public static final String MLD_EXPERIMENT = "experiment";
+	public static final String MLD_REFERENCE_ID = "referenceID";
 }
