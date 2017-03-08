@@ -280,4 +280,15 @@ public class IndexConstants {
 	public static final String MLD_EXPERIMENT_KEY = "experimentKey";
 	public static final String MLD_EXPERIMENT = "experiment";
 	public static final String MLD_REFERENCE_ID = "referenceID";
+	
+	// shared vocabulary browser
+	public static final String VB_PRIMARY_ID = "primaryID";
+	public static final String VB_ACC_ID = "accID";
+	public static final String VB_TERM = "term";
+	public static final String VB_SYNONYM = "synonym";
+	public static final String VB_PARENT_ID = "parentID";
+	public static final String VB_SEQUENCE_NUM = "sequenceNum";
+	public static final String VB_BROWSER_TERM = "browserTerm";
+	public static final String VB_VOCAB_NAME = "vocabName";
+	public static final String VB_DAG_NAME = "dagName";
 }
