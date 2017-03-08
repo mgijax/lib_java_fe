@@ -15,6 +15,14 @@ public class BrowserChild implements Serializable {
 
 	public BrowserChild() {}
 
+	public BrowserChild(String primaryID, String logicalDB, String term, String edgeType, Integer hasChildren) {
+		this.primaryID = primaryID;
+		this.logicalDB = logicalDB;
+		this.term = term;
+		this.edgeType = edgeType;
+		this.hasChildren = hasChildren;
+	}
+
 	public String getEdgeType() {
 		return edgeType;
 	}

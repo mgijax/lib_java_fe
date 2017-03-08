@@ -11,6 +11,11 @@ public class BrowserID implements Serializable {
 	private String logicalDB;
 
 	public BrowserID() {}
+	
+	public BrowserID(String accID, String logicalDB) {
+		this.accID = accID;
+		this.logicalDB = logicalDB;
+	}
 
 	public String getAccID() {
 		return accID;

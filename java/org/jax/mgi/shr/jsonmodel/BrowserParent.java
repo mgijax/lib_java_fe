@@ -14,6 +14,13 @@ public class BrowserParent implements Serializable {
 	
 	public BrowserParent() {}
 
+	public BrowserParent(String primaryID, String logicalDB, String term, String edgeType) {
+		this.primaryID = primaryID;
+		this.logicalDB = logicalDB;
+		this.term = term;
+		this.edgeType = edgeType;
+	}
+
 	public String getEdgeType() {
 		return edgeType;
 	}

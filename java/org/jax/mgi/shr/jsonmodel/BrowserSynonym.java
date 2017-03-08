@@ -12,6 +12,11 @@ public class BrowserSynonym implements Serializable {
 	
 	public BrowserSynonym() {}
 
+	public BrowserSynonym(String synonym, String synonymType) {
+		this.synonym = synonym;
+		this.synonymType = synonymType;
+	}
+
 	public String getSynonym() {
 		return synonym;
 	}
