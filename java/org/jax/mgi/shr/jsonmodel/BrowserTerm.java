@@ -1,6 +1,7 @@
 package org.jax.mgi.shr.jsonmodel;
 
 import java.io.Serializable;
+import java.util.ArrayList;
 import java.util.List;
 
 
@@ -16,6 +17,7 @@ public class BrowserTerm implements Serializable {
 	private BrowserParent defaultParent;
 	private List<BrowserParent> allParents;
 	private List<BrowserChild> children;
+	private List<String> distinctSynonyms;
 	private Integer annotationCount;
 	private String annotationLabel;
 	private String annotationUrl;
@@ -110,6 +112,30 @@ public class BrowserTerm implements Serializable {
 		this.term = term;
 	}
 
+	public void setDistinctSynonyms(List<String> distinctSynonyms) {
+		// no op; we just compute them when needed
+		this.distinctSynonyms = distinctSynonyms;
+	}
+	
+	/* get the list of distinct synonyms, disregarding the synonym type
+	 */
+	public List<String> getDistinctSynonyms() {
+		if (distinctSynonyms != null) {
+			return distinctSynonyms;
+		} 
+		
+		distinctSynonyms = new ArrayList<String>();
+		
+		if (this.synonyms != null) {
+			for (BrowserSynonym bs : this.getSynonyms()) {
+				if (!distinctSynonyms.contains(bs.getSynonym())) {
+					distinctSynonyms.add(bs.getSynonym());
+				}
+			}
+		}
+		return distinctSynonyms;
+	}
+	
 	@Override
 	public String toString() {
 		return "BrowserTerm [primaryID=" + primaryID + ", secondaryIDs=" + secondaryIDs + ", term=" + term
