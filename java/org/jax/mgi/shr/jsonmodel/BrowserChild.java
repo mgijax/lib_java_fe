@@ -12,6 +12,9 @@ public class BrowserChild implements Serializable {
 	private String term;
 	private String edgeType;
 	private Integer hasChildren;
+	private Integer annotationCount;
+	private String annotationLabel;
+	private String annotationUrl;
 
 	public BrowserChild() {}
 
@@ -21,6 +24,18 @@ public class BrowserChild implements Serializable {
 		this.term = term;
 		this.edgeType = edgeType;
 		this.hasChildren = hasChildren;
+	}
+
+	public Integer getAnnotationCount() {
+		return annotationCount;
+	}
+
+	public String getAnnotationLabel() {
+		return annotationLabel;
+	}
+
+	public String getAnnotationUrl() {
+		return annotationUrl;
 	}
 
 	public String getEdgeType() {
@@ -41,6 +56,18 @@ public class BrowserChild implements Serializable {
 
 	public String getTerm() {
 		return term;
+	}
+
+	public void setAnnotationCount(Integer annotationCount) {
+		this.annotationCount = annotationCount;
+	}
+
+	public void setAnnotationLabel(String annotationLabel) {
+		this.annotationLabel = annotationLabel;
+	}
+
+	public void setAnnotationUrl(String annotationUrl) {
+		this.annotationUrl = annotationUrl;
 	}
 
 	public void setEdgeType(String edgeType) {
