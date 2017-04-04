@@ -21,6 +21,8 @@ public class BrowserTerm implements Serializable {
 	private Integer annotationCount;
 	private String annotationLabel;
 	private String annotationUrl;
+	private String comment;
+	private String dagName;
 	
 	public BrowserTerm() {}
 
@@ -44,12 +46,39 @@ public class BrowserTerm implements Serializable {
 		return children;
 	}
 
+	public String getComment() {
+		return comment;
+	}
+
+	public String getDagName() {
+		return dagName;
+	}
+
 	public BrowserParent getDefaultParent() {
 		return defaultParent;
 	}
 
 	public String getDefinition() {
 		return definition;
+	}
+
+	/* get the list of distinct synonyms, disregarding the synonym type
+	 */
+	public List<String> getDistinctSynonyms() {
+		if (distinctSynonyms != null) {
+			return distinctSynonyms;
+		} 
+		
+		distinctSynonyms = new ArrayList<String>();
+		
+		if (this.synonyms != null) {
+			for (BrowserSynonym bs : this.getSynonyms()) {
+				if (!distinctSynonyms.contains(bs.getSynonym())) {
+					distinctSynonyms.add(bs.getSynonym());
+				}
+			}
+		}
+		return distinctSynonyms;
 	}
 
 	public BrowserID getPrimaryID() {
@@ -88,12 +117,25 @@ public class BrowserTerm implements Serializable {
 		this.children = children;
 	}
 
+	public void setComment(String comment) {
+		this.comment = comment;
+	}
+
+	public void setDagName(String dagName) {
+		this.dagName = dagName;
+	}
+
 	public void setDefaultParent(BrowserParent defaultParent) {
 		this.defaultParent = defaultParent;
 	}
 
 	public void setDefinition(String definition) {
 		this.definition = definition;
+	}
+
+	public void setDistinctSynonyms(List<String> distinctSynonyms) {
+		// no op; we just compute them when needed
+		this.distinctSynonyms = distinctSynonyms;
 	}
 
 	public void setPrimaryID(BrowserID primaryID) {
@@ -107,33 +149,9 @@ public class BrowserTerm implements Serializable {
 	public void setSynonyms(List<BrowserSynonym> synonyms) {
 		this.synonyms = synonyms;
 	}
-
+	
 	public void setTerm(String term) {
 		this.term = term;
-	}
-
-	public void setDistinctSynonyms(List<String> distinctSynonyms) {
-		// no op; we just compute them when needed
-		this.distinctSynonyms = distinctSynonyms;
-	}
-	
-	/* get the list of distinct synonyms, disregarding the synonym type
-	 */
-	public List<String> getDistinctSynonyms() {
-		if (distinctSynonyms != null) {
-			return distinctSynonyms;
-		} 
-		
-		distinctSynonyms = new ArrayList<String>();
-		
-		if (this.synonyms != null) {
-			for (BrowserSynonym bs : this.getSynonyms()) {
-				if (!distinctSynonyms.contains(bs.getSynonym())) {
-					distinctSynonyms.add(bs.getSynonym());
-				}
-			}
-		}
-		return distinctSynonyms;
 	}
 	
 	@Override
