@@ -9,6 +9,9 @@ public class IndexConstants {
 	public static final String SEQ_PROVIDER				= "sequenceProvider";
 	public static final String SEQ_PROVIDER_SORT		= "sequenceProviderSort";
 	public static final String SEQ_LENGTH				= "sequenceLength";
+	public static final String SEQ_SEQUENCE				= "sequence";
+	public static final String SEQ_TYPE					= "sequenceType";
+	public static final String SEQ_STRAIN				= "strain";
 
 	// Marker
 	public static final String MRK_KEY					= "markerKey";
