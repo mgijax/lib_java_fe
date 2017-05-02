@@ -8,7 +8,7 @@ import java.util.List;
  * to send the data as JSON into a Solr index and to then represent it in the fewi when the data is pulled
  * back out.
  */
-public class Sequence implements Serializable {
+public class SimpleSequence implements Serializable {
 	private int sequenceKey;
 	private String primaryID;
 	private String provider;
@@ -19,9 +19,9 @@ public class Sequence implements Serializable {
 	private List<String> cloneCollections;
 	private List<SimpleMarker> markers;
 	
-	public Sequence() {}
+	public SimpleSequence() {}
 
-	public Sequence(int sequenceKey, String primaryID, String provider, String sequenceType, String length,
+	public SimpleSequence(int sequenceKey, String primaryID, String provider, String sequenceType, String length,
 			String species, String description) {
 		this.sequenceKey = sequenceKey;
 		this.primaryID = primaryID;
