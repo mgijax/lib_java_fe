@@ -15,7 +15,11 @@ public class SimpleSequence implements Serializable {
 	private String sequenceType;
 	private String length;
 	private String species;
+	private String strain;
 	private String description;
+	private String preferredGenbankID;
+	private GenomicLocation location;
+	private List<AccessionID> otherIDs;
 	private List<String> cloneCollections;
 	private List<SimpleMarker> markers;
 	
@@ -44,8 +48,20 @@ public class SimpleSequence implements Serializable {
 		return length;
 	}
 
+	public GenomicLocation getLocation() {
+		return location;
+	}
+
 	public List<SimpleMarker> getMarkers() {
 		return markers;
+	}
+
+	public List<AccessionID> getOtherIDs() {
+		return otherIDs;
+	}
+
+	public String getPreferredGenbankID() {
+		return preferredGenbankID;
 	}
 
 	public String getPrimaryID() {
@@ -68,6 +84,10 @@ public class SimpleSequence implements Serializable {
 		return species;
 	}
 
+	public String getStrain() {
+		return strain;
+	}
+
 	public void setCloneCollections(List<String> cloneCollections) {
 		this.cloneCollections = cloneCollections;
 	}
@@ -80,8 +100,20 @@ public class SimpleSequence implements Serializable {
 		this.length = length;
 	}
 
+	public void setLocation(GenomicLocation location) {
+		this.location = location;
+	}
+
 	public void setMarkers(List<SimpleMarker> markers) {
 		this.markers = markers;
+	}
+
+	public void setOtherIDs(List<AccessionID> otherIDs) {
+		this.otherIDs = otherIDs;
+	}
+
+	public void setPreferredGenbankID(String preferredGenbankID) {
+		this.preferredGenbankID = preferredGenbankID;
 	}
 
 	public void setPrimaryID(String primaryID) {
@@ -102,6 +134,10 @@ public class SimpleSequence implements Serializable {
 
 	public void setSpecies(String species) {
 		this.species = species;
+	}
+
+	public void setStrain(String strain) {
+		this.strain = strain;
 	}
 
 	@Override
