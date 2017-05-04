@@ -144,9 +144,13 @@ public class SolrLocationTranslator
 	 *  
 	 *  returns empty string for all errors in input string format
 	 */
-	public static String getQueryValue(String queryString)
+	public static String getQueryValue(String queryString, String units)
 	{
 		if(queryString==null) return "";
+		int multiplier = 1;
+		if ((units != null) && ("Mbp".equalsIgnoreCase(units))) {
+			multiplier = 1000000;
+		}
 
 		String errorReturn = "";
 		queryString = queryString.toLowerCase();
@@ -185,8 +189,8 @@ public class SolrLocationTranslator
 		long start,end;
 		try
 		{
-			start = Long.parseLong(coord1String);
-			end = Long.parseLong(coord2String);
+			start = Math.round((Double.parseDouble(coord1String) * multiplier));
+			end = Math.round((Double.parseDouble(coord2String) * multiplier));
 		}catch(NumberFormatException nfe)
 		{
 			return errorReturn;
