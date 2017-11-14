@@ -187,6 +187,7 @@ public class IndexConstants {
 	public static final String STRUCTUREAC_HAS_GXDHT = "hasGxdHT";
 	public static final String STRUCTUREAC_START_STAGE = "startStage";
 	public static final String STRUCTUREAC_END_STAGE = "endStage";
+	public static final String STRUCTUREAC_CROSSREF = "crossRef";
 
 	// Vocab Term Auto Complete Fields
 	public static final String VOCABAC_KEY = "uniqueKey";
