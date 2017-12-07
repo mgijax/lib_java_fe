@@ -23,6 +23,7 @@ public class BrowserTerm implements Serializable {
 	private String annotationUrl;
 	private String comment;
 	private String dagName;
+	private boolean relatedToTissues;
 	
 	public BrowserTerm() {}
 
@@ -97,6 +98,10 @@ public class BrowserTerm implements Serializable {
 		return term;
 	}
 
+	public boolean isRelatedToTissues() {
+		return relatedToTissues;
+	}
+
 	public void setAllParents(List<BrowserParent> allParents) {
 		this.allParents = allParents;
 	}
@@ -140,6 +145,10 @@ public class BrowserTerm implements Serializable {
 
 	public void setPrimaryID(BrowserID primaryID) {
 		this.primaryID = primaryID;
+	}
+
+	public void setRelatedToTissues(boolean relatedToTissues) {
+		this.relatedToTissues = relatedToTissues;
 	}
 
 	public void setSecondaryIDs(List<BrowserID> secondaryIDs) {

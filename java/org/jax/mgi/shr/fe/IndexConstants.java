@@ -155,6 +155,7 @@ public class IndexConstants {
 	public static final String BY_ISOFORM			= "byIsoform";
 	public static final String EVIDENCE_CATEGORY	= "evidenceCategory";
 	public static final String SLIM_TERM		= "slimTerm";
+	public static final String ANATOMY_ID		= "anatomyID";
 
 	// Genotypes
 	public static final String GENOTYPE_KEY		= "genotypeKey";
