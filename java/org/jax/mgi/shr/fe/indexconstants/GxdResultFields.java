@@ -21,6 +21,7 @@ public class GxdResultFields
     public static final String MUTATED_IN = "mutatedIn";
     public static final String IS_WILD_TYPE = "isWildType";
     public static final String ALLELE_ID = "alleleId";
+    public static final String ALLELE_ID_VIA_PHENOTYPE = "alleleIdViaPhenotype";
 
     //result centric summary fields
     public static final String ASSAY_MGIID = "assayMgiid";
