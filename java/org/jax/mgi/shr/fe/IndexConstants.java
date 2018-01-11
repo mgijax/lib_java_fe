@@ -161,6 +161,7 @@ public class IndexConstants {
 	public static final String ANNOTATION_COUNT = "annotationCount";
 	public static final String IS_NORMAL		= "isNormal";
 	public static final String HAS_BACKGROUND_SENSITIVITY = "hasBackgroundSensitivity";
+	public static final String BY_GENOCLUSTER	= "byGenocluster";
 
 	// Genotypes
 	public static final String GENOTYPE_KEY		= "genotypeKey";
