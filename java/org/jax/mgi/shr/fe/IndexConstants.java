@@ -156,6 +156,11 @@ public class IndexConstants {
 	public static final String EVIDENCE_CATEGORY	= "evidenceCategory";
 	public static final String SLIM_TERM		= "slimTerm";
 	public static final String ANATOMY_ID		= "anatomyID";
+	public static final String PARENT_ANATOMY_ID	= "parentAnatomyID";
+	public static final String ANATOMY_TERM		= "anatomyTerm";
+	public static final String ANNOTATION_COUNT = "annotationCount";
+	public static final String IS_NORMAL		= "isNormal";
+	public static final String HAS_BACKGROUND_SENSITIVITY = "hasBackgroundSensitivity";
 
 	// Genotypes
 	public static final String GENOTYPE_KEY		= "genotypeKey";
@@ -214,6 +219,7 @@ public class IndexConstants {
 	// Disease constants
 	public static final String DISEASE_ID = "diseaseID";
 	public static final String DISEASE_KEY = "diseaseKey";
+	public static final String GENOCLUSTER_KEY = "genoclusterKey";
 
 	// ordering of records (not specific to actual DNA/Poly sequences)
 	public static final String SEQUENCE_NUM = "sequenceNum";
