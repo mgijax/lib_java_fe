@@ -158,6 +158,7 @@ public class IndexConstants {
 	public static final String ANATOMY_ID		= "anatomyID";
 	public static final String PARENT_ANATOMY_ID	= "parentAnatomyID";
 	public static final String ANATOMY_TERM		= "anatomyTerm";
+	public static final String ANCESTOR_ANATOMY_KEY	= "ancestorAnatomyKey";
 	public static final String ANNOTATION_COUNT = "annotationCount";
 	public static final String IS_NORMAL		= "isNormal";
 	public static final String HAS_BACKGROUND_SENSITIVITY = "hasBackgroundSensitivity";
