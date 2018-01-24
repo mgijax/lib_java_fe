@@ -307,4 +307,17 @@ public class IndexConstants {
 	public static final String VB_VOCAB_NAME = "vocabName";
 	public static final String VB_DAG_NAME = "dagName";
 	public static final String VB_CROSSREF = "crossRef";
+	
+	// expression counts and flags
+	public static final String ALL_RESULTS = "allResults";
+	public static final String DETECTED_RESULTS = "detectedResults";
+	public static final String NOT_DETECTED_RESULTS = "notDetectedResults";
+	public static final String ANY_AMBIGUOUS = "anyAmbiguous";
+
+	// generic stuff
+	public static final String ORGANISM = "organism";
+	public static final String SYMBOL = "symbol";
+	public static final String COLUMN_ID = "columnID";
+	public static final String BY_COLUMN = "byColumn";
+	public static final String CELL_TYPE = "cellType";
 }
