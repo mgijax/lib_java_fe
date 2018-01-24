@@ -320,4 +320,5 @@ public class IndexConstants {
 	public static final String COLUMN_ID = "columnID";
 	public static final String BY_COLUMN = "byColumn";
 	public static final String CELL_TYPE = "cellType";
+	public static final String CHILDREN = "children";
 }
