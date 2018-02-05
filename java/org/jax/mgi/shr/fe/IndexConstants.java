@@ -313,6 +313,7 @@ public class IndexConstants {
 	public static final String DETECTED_RESULTS = "detectedResults";
 	public static final String NOT_DETECTED_RESULTS = "notDetectedResults";
 	public static final String ANY_AMBIGUOUS = "anyAmbiguous";
+	public static final String AMBIGUOUS_OR_NOT_DETECTED_DESCENDANTS = "ambiguousOrNotDetectedDescendants";
 
 	// generic stuff
 	public static final String ORGANISM = "organism";
