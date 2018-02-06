@@ -85,6 +85,8 @@ public class GxdResultFields
     public static final String DIFF_EXC_ANCESTORS = "excAnc";
     public static final String DIFF_EXC_ANCESTORS_ALL_STAGES = "excAncAllStages";
     public static final String DIFF_NEG_DESCENDANTS = "negDec";
+    public static final String DIFF_EXCLUSIVE_STRUCTURES = "exclusiveStructures";
+    public static final String DIFF_EXCLUSIVE_STAGES = "exclusiveStages";
 
     // Matrix group fields
     public static final String STAGE_MATRIX_GROUP = "stageMatrixGroup";
