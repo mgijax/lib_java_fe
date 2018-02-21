@@ -14,6 +14,7 @@ public class GxdResultFields
     public static final String AGE_MAX = "ageMax";
     public static final String STRUCTURE_ANCESTORS = "structureAncestors";
     public static final String STRUCTURE_EXACT = "structureExact";
+    public static final String EMAPS_ID = "emapsId";
     public static final String STRUCTURE_ID = "structureId";
     public static final String STRUCTURE_KEY = "structureKey";
     public static final String ANNOTATED_STRUCTURE_KEY = "annotatedStructureKey";

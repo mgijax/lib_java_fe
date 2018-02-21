@@ -11,6 +11,7 @@ public class DagEdgeFields {
 	public static String PARENT_TERM_KEY = "parentTermKey";
 	public static String PARENT_TERM = "parentTerm";
 	public static String PARENT_ID = "parentId";
+	public static String EMAPS_ID = "emapsId";
 	public static String VOCAB = "vocab";
 	public static String EDGE_TYPE = "edgeType";
 	// edge types
