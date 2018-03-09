@@ -53,5 +53,6 @@ public class CreFields
     public static final String BY_SEX                       = "bySex";
     public static final String BY_SPECIMEN_NOTE             = "bySpecimenNote";
     public static final String BY_RESULT_NOTE               = "byResultNote";
-
+    public static final String BY_DETECTED                  = "byDetected";
+    public static final String BY_NOT_DETECTED              = "byNotDetected";
 }
