@@ -277,6 +277,12 @@ public class IndexConstants {
 	public static final String SNP_DIFF_STRAINS = "diffstrains";
 	public static final String SNP_JSONSTRING = "objectJSONData";
 	
+	// strain constants
+	public static final String STRAIN_KEY = "strainKey";
+	public static final String STRAIN_NAME = "strainName";
+	public static final String STRAIN_TYPE = "strainType";
+	public static final String STRAIN = "strain";
+
 	// cDNA clones
 	public static final String CDNA_KEY = "cloneKey";
 	public static final String CDNA_MARKER_ID = "markerID";
