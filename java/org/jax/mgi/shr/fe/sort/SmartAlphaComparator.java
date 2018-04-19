@@ -37,7 +37,7 @@ public class SmartAlphaComparator implements Comparator<String>
 			{
 				if (inDigits)
 				{
-					splits.add((Integer)Integer.parseInt(s.substring(last, i)));
+					splits.add((Long)Long.parseLong(s.substring(last, i)));
 				}
 				else
 				{
@@ -49,7 +49,7 @@ public class SmartAlphaComparator implements Comparator<String>
 		}
 		if (inDigits)
 		{
-			splits.add(Integer.parseInt(s.substring(last)));
+			splits.add(Long.parseLong(s.substring(last)));
 		}
 		else
 		{
@@ -76,7 +76,7 @@ public class SmartAlphaComparator implements Comparator<String>
 				if(ob1.getClass() != ob2.getClass())
 				{
 					// numbers go first
-					if(ob1 instanceof Integer) return -1;
+					if(ob1 instanceof Long) return -1;
 					else return 1;
 				}
 				else
@@ -84,8 +84,8 @@ public class SmartAlphaComparator implements Comparator<String>
 					// continue on if they are equal
 					if (!ob1.equals(ob2))
 					{
-						// just cast the correct type and return the compare functions for Integer or String
-						if(ob1 instanceof Integer) return ((Integer)ob1).compareTo((Integer)ob2);							
+						// just cast the correct type and return the compare functions for Long or String
+						if(ob1 instanceof Long) return ((Long)ob1).compareTo((Long)ob2);							
 						else return ((String)ob1).compareToIgnoreCase((String)ob2);
 					}
 				}
