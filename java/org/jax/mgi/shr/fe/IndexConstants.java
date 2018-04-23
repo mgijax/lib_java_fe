@@ -280,6 +280,7 @@ public class IndexConstants {
 	// strain constants
 	public static final String STRAIN_KEY = "strainKey";
 	public static final String STRAIN_NAME = "strainName";
+	public static final String STRAIN_NAME_LOWER = "strainNameLower";
 	public static final String STRAIN_TYPE = "strainType";
 	public static final String STRAIN = "strain";
 
