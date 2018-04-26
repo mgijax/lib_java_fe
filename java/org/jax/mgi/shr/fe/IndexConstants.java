@@ -283,6 +283,7 @@ public class IndexConstants {
 	public static final String STRAIN_NAME_LOWER = "strainNameLower";
 	public static final String STRAIN_TYPE = "strainType";
 	public static final String STRAIN = "strain";
+	public static final String STRAIN_ID = "strainID";
 
 	// cDNA clones
 	public static final String CDNA_KEY = "cloneKey";
