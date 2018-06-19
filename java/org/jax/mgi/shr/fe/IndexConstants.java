@@ -286,6 +286,8 @@ public class IndexConstants {
 	public static final String STRAIN_ID = "strainID";
 	public static final String STRAIN_ATTRIBUTE = "attribute";
 	public static final String STRAIN_ATTRIBUTE_LOWER = "attributeLower";
+	public static final String STRAIN_IS_SEQUENCED = "isSequenced";
+	public static final String STRAIN_GROUPS = "groups";
 
 	// cDNA clones
 	public static final String CDNA_KEY = "cloneKey";
