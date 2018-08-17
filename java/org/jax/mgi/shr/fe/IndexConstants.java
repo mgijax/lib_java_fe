@@ -29,6 +29,18 @@ public class IndexConstants {
 	public static final String MRK_BY_SYMBOL			= "byMrkSymbol";
 	public static final String MRK_FEATURE_TYPE			= "featureType";
 
+	// various symbols in marker index
+    public static final String MRK_CURRENT_SYMBOL	= "currentSymbol";
+    public static final String MRK_HUMAN_SYMBOL		= "humanSymbol";
+    public static final String MRK_RAT_SYMBOL		= "ratSymbol";
+    public static final String MRK_RHESUS_SYMBOL	= "rhesusSymbol";
+    public static final String MRK_CATTLE_SYMBOL	= "cattleSymbol";
+    public static final String MRK_DOG_SYMBOL		= "dogSymbol";
+    public static final String MRK_ZFIN_SYMBOL		= "zebrafishSymbol";
+    public static final String MRK_CHICKEN_SYMBOL	= "chickenSymbol";
+    public static final String MRK_CHIMP_SYMBOL		= "chimpSymbol";
+    public static final String MRK_FROG_SYMBOL		= "westernClawedFrogSymbol";
+	
 	// Allele
 	public static final String ALL_KEY					= "alleleKey";
 	public static final String ALL_DRIVER				= "driver";
