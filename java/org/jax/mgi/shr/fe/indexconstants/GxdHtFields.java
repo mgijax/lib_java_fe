@@ -21,6 +21,7 @@ public class GxdHtFields
 	public static String TITLE_DESCRIPTION = "titleDescription";
 	public static String REFERENCE_ID = "referenceID";
 	public static String EXPERIMENT_ID = "experimentID";
+	public static String PUBMED_IDS = "pubmedIDs";
 
 	// sample fields
 	public static String SAMPLE_KEY = "sampleKey";
