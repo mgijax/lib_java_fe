@@ -300,6 +300,7 @@ public class IndexConstants {
 	public static final String STRAIN_ATTRIBUTE_LOWER = "attributeLower";
 	public static final String STRAIN_IS_SEQUENCED = "isSequenced";
 	public static final String STRAIN_GROUPS = "groups";
+	public static final String STRAIN_TAGS = "tags";
 
 	// cDNA clones
 	public static final String CDNA_KEY = "cloneKey";
