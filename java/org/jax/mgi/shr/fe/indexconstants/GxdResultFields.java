@@ -77,6 +77,12 @@ public class GxdResultFields
     public static final String STRAND = "strand";
     public static final String MOUSE_COORDINATE = "mc";
 
+    // marker-centric filtering fields
+    public static final String MP_HEADERS = "mpHeaders";
+    public static final String GO_HEADERS = "goHeaders";
+    public static final String DO_HEADERS = "doHeaders";
+    public static final String FEATURE_TYPES = "featureTypes";
+    
     // other query fields
     public static final String PROBE_KEY = "probeKey";
     public static final String ANTIBODY_KEY = "antibodyKey";
