@@ -125,7 +125,7 @@ public class IndexConstants {
 	public static final String GXD_WILDTYPE_FACET = "isWildType";
 	public static final String GXD_DETECTED_FACET = "detectionLevel";
 	public static final String GXD_THEILER_STAGE_FACET = "theilerStage";
-	public static final String GXD_MARKER_TYPE_FACET = "markerType";
+	public static final String GXD_MARKER_TYPE_FACET = "featureTypes";
 
 	// General
 	public static final String ACC_ID				= "accID";
