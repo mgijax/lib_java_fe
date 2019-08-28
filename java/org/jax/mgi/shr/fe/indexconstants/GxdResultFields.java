@@ -82,6 +82,7 @@ public class GxdResultFields
     public static final String GO_HEADERS = "goHeaders";
     public static final String DO_HEADERS = "doHeaders";
     public static final String FEATURE_TYPES = "featureTypes";
+    public static final String AGES = "ages";
     
     // other query fields
     public static final String PROBE_KEY = "probeKey";
