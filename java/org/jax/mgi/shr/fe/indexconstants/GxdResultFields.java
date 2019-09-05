@@ -36,6 +36,11 @@ public class GxdResultFields
     public static final String PUBMED_ID = "pubmedId";
     public static final String SHORT_CITATION = "shortCitation";
     public static final String PATTERN = "pattern";
+    public static final String TPM_LEVEL = "tpmLevel";
+    public static final String BIOLOGICAL_REPLICATES = "biologicalReplicates";
+    public static final String STRAIN = "strain";
+    public static final String SEX = "sex";
+    public static final String NOTES = "notes";
 
     // Result sorts are prepended by 'R'
     // Assay sorts are prepended by 'A'
