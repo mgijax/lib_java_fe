@@ -128,9 +128,7 @@ public class IndexConstants {
 	public static final String GXD_MARKER_TYPE_FACET = "featureTypes";
 	public static final String GXD_MP_FACET = "mpHeaders";
 	public static final String GXD_DO_FACET = "doHeaders";
-	public static final String GXD_GO_BP_FACET = "goBpHeaders";
-	public static final String GXD_GO_CC_FACET = "goCcHeaders";
-	public static final String GXD_GO_MF_FACET = "goMfHeaders";
+	public static final String GXD_GO_FACET = "goHeaders";
 	
 	
 	
