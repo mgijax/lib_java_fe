@@ -23,6 +23,7 @@ public class GxdHtFields
 	public static String EXPERIMENT_ID = "experimentID";
 	public static String PUBMED_IDS = "pubmedIDs";
 	public static String IS_IN_ATLAS = "isInAtlas";
+	public static String IS_LOADED = "isLoaded";
 
 	// sample fields
 	public static String SAMPLE_KEY = "sampleKey";
