@@ -84,7 +84,9 @@ public class GxdResultFields
 
     // marker-centric filtering fields
     public static final String MP_HEADERS = "mpHeaders";
-    public static final String GO_HEADERS = "goHeaders";
+    public static final String GO_HEADERS_CC = "goHeadersCC";
+    public static final String GO_HEADERS_BP = "goHeadersBP";
+    public static final String GO_HEADERS_MF = "goHeadersMF";
     public static final String DO_HEADERS = "doHeaders";
     public static final String FEATURE_TYPES = "featureTypes";
     public static final String AGES = "ages";
