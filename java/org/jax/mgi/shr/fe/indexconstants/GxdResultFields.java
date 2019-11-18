@@ -37,6 +37,7 @@ public class GxdResultFields
     public static final String SHORT_CITATION = "shortCitation";
     public static final String PATTERN = "pattern";
     public static final String TPM_LEVEL = "tpmLevel";
+    public static final String AVG_QN_TPM_LEVEL = "avgQnTpmLevel";
     public static final String BIOLOGICAL_REPLICATES = "biologicalReplicates";
     public static final String STRAIN = "strain";
     public static final String SEX = "sex";
