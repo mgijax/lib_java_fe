@@ -22,6 +22,7 @@ public class GxdResultFields
     public static final String MUTATED_IN = "mutatedIn";
     public static final String IS_WILD_TYPE = "isWildType";
     public static final String ALLELE_ID = "alleleId";
+    public static final String CONSOLIDATED_SAMPLE_KEY = "consolidatedSampleKey";
 
     //result centric summary fields
     public static final String ASSAY_MGIID = "assayMgiid";
@@ -75,6 +76,7 @@ public class GxdResultFields
     public static final String MARKER_SYMBOL = "markerSymbol";
     public static final String MARKER_NAME = "markerName";
     public static final String MARKER_TYPE = "markerType";
+    public static final String ENSEMBL_GMID = "ensemblGeneModelID";
     public static final String CHROMOSOME = "chr";
     public static final String CENTIMORGAN = "cM";
     public static final String CYTOBAND = "cytoband";
