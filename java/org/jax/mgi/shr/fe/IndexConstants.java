@@ -129,7 +129,7 @@ public class IndexConstants {
 	public static final String GXD_MP_FACET = "mpHeaders";
 	public static final String GXD_DO_FACET = "doHeaders";
 	public static final String GXD_GO_FACET = "goHeaders";
-	
+	public static final String GXD_TMPLEVEL_FACET = "tpmLevel";
 	
 	
 	// General
