@@ -354,4 +354,17 @@ public class IndexConstants {
 	public static final String BY_COLUMN = "byColumn";
 	public static final String CELL_TYPE = "cellType";
 	public static final String CHILDREN = "children";
+
+	// quick search buckets 1 and 2 (genome features and term/strain)
+	public static final String QS_PRIMARY_ID = "primaryID";
+	public static final String QS_ACC_ID = "accID";
+	public static final String QS_TERM = "term";
+	public static final String QS_TERM_TYPE = "termType";
+	public static final String QS_SYNONYM = "synonym";
+	public static final String QS_VOCAB_NAME = "vocabName";
+	public static final String QS_DETAIL_URI = "detailUri";
+	public static final String QS_ANNOTATION_COUNT = "annotationCount";
+	public static final String QS_ANNOTATION_TEXT = "annotationText";
+	public static final String QS_ANNOTATION_URI = "annotationUri";
+	public static final String QS_SEQUENCE_NUM = "sequenceNum";
 }
