@@ -367,4 +367,5 @@ public class IndexConstants {
 	public static final String QS_ANNOTATION_TEXT = "annotationText";
 	public static final String QS_ANNOTATION_URI = "annotationUri";
 	public static final String QS_SEQUENCE_NUM = "sequenceNum";
+	public static final String SCORE = "score";							// raw Solr score
 }
