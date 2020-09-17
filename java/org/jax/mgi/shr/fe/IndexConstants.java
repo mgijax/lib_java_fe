@@ -373,5 +373,9 @@ public class IndexConstants {
 	public static final String QS_FEATURE_TYPE = "featureType";
 	public static final String QS_IS_MARKER = "isMarker";
 	public static final String QS_SEARCH_TEXT = "searchText";
+	public static final String QS_CHROMOSOME = "chromosome";
+	public static final String QS_START_COORD = "startCoord";
+	public static final String QS_END_COORD = "endCoord";
+	public static final String QS_STRAND = "strand";
 	public static final String SCORE = "score";							// raw Solr score
 }
