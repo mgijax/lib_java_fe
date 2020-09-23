@@ -377,5 +377,7 @@ public class IndexConstants {
 	public static final String QS_START_COORD = "startCoord";
 	public static final String QS_END_COORD = "endCoord";
 	public static final String QS_STRAND = "strand";
+	public static final String QS_ORTHOLOG_NOMEN = "orthologNomen";
+	public static final String QS_ORTHOLOG_NOMEN_ORG = "orthologNomenOrg";
 	public static final String SCORE = "score";							// raw Solr score
 }
