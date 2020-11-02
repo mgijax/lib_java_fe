@@ -411,4 +411,9 @@ public class IndexConstants {
 	public static final String QS_GXD_ANNOTATIONS = "gxdAnnotations";
 	public static final String QS_DISEASE_ANNOTATIONS = "diseaseAnnotations";
 	public static final String SCORE = "score";							// raw Solr score
+
+	// used for finding alleles by marker nomenclature
+	public static final String QS_MARKER_SYMBOL = "markerSymbol";
+	public static final String QS_MARKER_NAME = "markerName";
+	public static final String QS_MARKER_SYNONYM = "markerSynonym";
 }
