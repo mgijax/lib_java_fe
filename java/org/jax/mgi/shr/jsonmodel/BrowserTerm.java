@@ -51,6 +51,14 @@ public class BrowserTerm implements Serializable {
 		return comment;
 	}
 
+	public String getCleanComment() {
+		// For MP terms, we need to exclude xrefs from display in the comment field.
+		if ((comment != null) && (primaryID != null) && (primaryID.getAccID() != null) && (primaryID.getAccID().startsWith("MP:"))) {
+			return comment.replaceAll("\\{xref[^}]*\\}", "");
+		}
+		return comment;
+	}
+
 	public String getDagName() {
 		return dagName;
 	}
