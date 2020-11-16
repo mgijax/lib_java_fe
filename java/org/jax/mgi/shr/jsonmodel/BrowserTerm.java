@@ -22,6 +22,7 @@ public class BrowserTerm implements Serializable {
 	private String annotationLabel;
 	private String annotationUrl;
 	private String comment;
+	private String cleanComment;
 	private String dagName;
 	private boolean relatedToTissues;
 	
@@ -52,11 +53,19 @@ public class BrowserTerm implements Serializable {
 	}
 
 	public String getCleanComment() {
+                if (this.cleanComment != null) { return this.cleanComment; }
+
 		// For MP terms, we need to exclude xrefs from display in the comment field.
 		if ((comment != null) && (primaryID != null) && (primaryID.getAccID() != null) && (primaryID.getAccID().startsWith("MP:"))) {
-			return comment.replaceAll("\\{xref[^}]*\\}", "");
+			this.cleanComment = comment.replaceAll("\\{xref[^}]*\\}", "");
+                        return this.cleanComment;
 		}
+                this.cleanComment = comment;
 		return comment;
+	}
+
+	public void setCleanComment(String cleanComment) {
+		this.cleanComment = cleanComment;
 	}
 
 	public String getDagName() {
