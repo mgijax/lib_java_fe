@@ -389,5 +389,9 @@ public class IndexConstants {
 	public static final String QS_PHENOTYPE_FACETS = "phenotypeFacets";
 	public static final String QS_MARKER_TYPE_FACETS = "markerTypeFacets";
 	
+	public static final String QS_ATTRIBUTES = "attributes";			// special for strain bucket
+	public static final String QS_REFERENCE_COUNT = "referenceCount";
+	public static final String QS_REFERENCE_URI = "referenceUri";
+
 	public static final String SCORE = "score";							// raw Solr score
 }
