@@ -12,7 +12,6 @@
 	
 	<property name="src.dir" value="java"/>
 	<property name="test.dir" value="test"/>
-	<property name="doc.dir" value="javadocs"/>
 	<property name="classes.dir" value="classes"/>
 	<property name="dist.dir" location="dist"/>
 	
@@ -39,7 +38,6 @@
 
 	<target name="clean" description="Remove all generated files.">
 		<delete dir="${classes.dir}"/>
-		<delete dir="${doc.dir}"/>
 		<delete dir="${dist.dir}"/>
 		  <delete dir="${unittestoutput.dir}"/>
 	</target>
@@ -82,41 +80,9 @@
 			  excludes="**/*Test.class"/>
 	</target>
 
-	<target name="javadocs"
-			  description="Generates the javadocs in the 'javadocs' directory.">
-		<mkdir dir="${doc.dir}"/>
-		<javadoc packagenames="org.jax.mgi.*"
-					classpath="${classpath}"
-					sourcepath="${src.dir}"
-					destdir="${doc.dir}"
-					author="true"
-					version="true"
-					use="true">
-			<tag name="Is" description="Is:" />
-			<tag name="Has" description="Has:" />
-			<tag name="Does" description="Does:" />
-			<tag name="Assumes" description="Assumes:" />
-			<tag name="Effects" description="Effects:" />
-			<tag name="Notes" description="Notes: "/>
-			<tag name="Company" description="Company:" />
-			<tag name="Abstract" description="Abstract:" />
-			<tag name="is" description="Is:" />
-			<tag name="has" description="Has:" />
-			<tag name="does" description="Does:" />
-			<tag name="assumes" description="Assumes:" />
-			<tag name="effects" description="Effects:" />
-			<tag name="notes" description="Notes: "/>
-			<tag name="company" description="Company:" />
-			<tag name="abstract" description="Abstract:" />
-		</javadoc>
-	</target>
-
-	<target name="install" description="Copies the product jar/javadocs into the install directory"
-			  depends="jar, javadocs">
+	<target name="install" description="Copies the product jar into the install directory"
+			  depends="jar">
 		<copy file="${dist.dir}/${jar.name}.jar" todir="${install.dir}"/>
-		<copy todir="${install.dir}/javadocs/${jar.name}" overwrite="true">
-			<fileset dir="${doc.dir}"/>
-		</copy>
 	</target>
 
 	<target name="link" description="Creates symbolic link"
@@ -131,8 +97,8 @@
 		</exec>
 	</target>
 
-	<target name="all" depends="clean, jar, javadocs"
-			  description="Cleans, cvs compiles, creates jar and generates javadocs."/>
+	<target name="all" depends="clean, jar"
+			  description="Cleans, cvs compiles and creates jar."/>
 
 	<!-- Define product specific targets.
 	-->
