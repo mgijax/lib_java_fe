@@ -37,6 +37,7 @@ public class EasyStemmer {
 		return stemmer.stem();
 	}
 	
+	// main program for testing -- will stem all arguments from the command-line
 	public static void main (String[] args) {
 		StringBuffer words = new StringBuffer();
 		for (String arg : args) {

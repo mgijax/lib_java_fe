@@ -22,6 +22,7 @@ public class StopwordRemover {
 		return temp.replaceAll("[\\s]+", " ");
 	}
 
+	// main program for testing -- will remove stopwords from all arguments from the command-line
 	public static void main (String[] args) {
 		StringBuffer words = new StringBuffer();
 		for (String arg : args) {
