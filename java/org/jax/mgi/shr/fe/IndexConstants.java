@@ -368,8 +368,8 @@ public class IndexConstants {
 	public static final String QS_END_COORD = "endCoord";
 	public static final String QS_STRAND = "strand";
 
-	public static final String QS_SEARCH_ID = "searchID";
-	public static final String QS_SEARCH_TERM = "searchTerm";
+	public static final String QS_SEARCH_TERM_EXACT = "searchTermExact";
+	public static final String QS_SEARCH_TERM_STEMMED = "searchTermStemmed";
 	public static final String QS_SEARCH_TERM_DISPLAY = "searchTermDisplay";
 	public static final String QS_SEARCH_TERM_TYPE = "searchTermType";
 	public static final String QS_SEARCH_TERM_WEIGHT = "searchTermWeight";
