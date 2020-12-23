@@ -7,7 +7,9 @@ import java.util.List;
  */
 public class StopwordRemover {
 	// list of stopwords to remove
-	private static List<String> stopwords = Arrays.asList("a", "and", "from", "or", "of", "the", "their", "to");
+	private static List<String> stopwords = Arrays.asList("a", "also", "and", "are", "as", "at", "be",
+                "can", "from", "in", "is", "it", "its", "like", "or", "of", "the", "not", "their", "there",
+                "this", "to", "too", "with", "which");
 	
 	// Remove all stopwords from the given 'phrase' in a case-insensitive manner, then condense consecutive
 	// whitespace down to single spaces.
