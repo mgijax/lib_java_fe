@@ -376,6 +376,8 @@ public class IndexConstants {
 	public static final String QS_SEARCH_TERM_TYPE = "searchTermType";
 	public static final String QS_SEARCH_TERM_WEIGHT = "searchTermWeight";
 
+	public static final String QS_OBJECT_TYPE = "objectType";			// special for other bucket:
+	public static final String QS_OBJECT_SUBTYPE = "objectSubType";		// special for other bucket:
 	public static final String QS_TERM = "term";						// special for vocab bucket:
 	public static final String QS_TERM_TYPE = "termType";
 	public static final String QS_VOCAB_NAME = "vocabName";				// for display in QS
