@@ -404,5 +404,9 @@ public class IndexConstants {
 	public static final String QS_REFERENCE_COUNT = "referenceCount";
 	public static final String QS_REFERENCE_URI = "referenceUri";
 
+	public static final String QS_SEARCHTYPE_TEXT = "text";
+	public static final String QS_SEARCHTYPE_MOUSE_COORD = "mouse location";
+	public static final String QS_SEARCHTYPE_HUMAN_COORD = "human location";
+
 	public static final String SCORE = "score";							// raw Solr score
 }
