@@ -254,6 +254,7 @@ public class IndexConstants {
 	public static final String CM_OFFSET = "cm";
 	public static final String CYTOGENETIC_OFFSET = "cytogenetic";
 	public static final String STRAND = "strand";
+	public static final String COORD_TYPE = "coordType";
 
 	// regulates relationships
 
