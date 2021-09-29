@@ -405,9 +405,11 @@ public class IndexConstants {
 	public static final String QS_REFERENCE_COUNT = "referenceCount";
 	public static final String QS_REFERENCE_URI = "referenceUri";
 
-	public static final String QS_SEARCHTYPE_TEXT = "text";
-	public static final String QS_SEARCHTYPE_MOUSE_COORD = "mouse location";
-	public static final String QS_SEARCHTYPE_HUMAN_COORD = "human location";
+	// These four should probably be moved to SearchConstants.java in the fewi.
+	public static final String QS_SEARCHTYPE_EXACT_PHRASE = "exactPhrase";
+	public static final String QS_SEARCHTYPE_KEYWORDS = "keywords";
+	public static final String QS_SEARCHTYPE_MOUSE_COORD = "mouseLocation";
+	public static final String QS_SEARCHTYPE_HUMAN_COORD = "humanLocation";
 
 	public static final String SCORE = "score";							// raw Solr score
 }
