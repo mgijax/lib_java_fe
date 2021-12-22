@@ -43,6 +43,7 @@ public class GxdResultFields
     public static final String STRAIN = "strain";
     public static final String SEX = "sex";
     public static final String NOTES = "notes";
+    public static final String CELL_TYPE = "cellType";
 
     // Result sorts are prepended by 'R'
     // Assay sorts are prepended by 'A'
