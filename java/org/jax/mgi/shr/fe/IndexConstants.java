@@ -404,6 +404,7 @@ public class IndexConstants {
 	public static final String QS_ATTRIBUTES = "attributes";			// special for strain bucket
 	public static final String QS_REFERENCE_COUNT = "referenceCount";
 	public static final String QS_REFERENCE_URI = "referenceUri";
+	public static final String QS_IMSR_ID = "imsrID";
 
 	// These four should probably be moved to SearchConstants.java in the fewi.
 	public static final String QS_SEARCHTYPE_EXACT_PHRASE = "exactPhrase";
