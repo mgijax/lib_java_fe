@@ -100,18 +100,17 @@ public class SolrLocationTranslator
 			return "";
 		}
 		
-		String queryValue = "\"Intersects(";
+		String queryValue = "[";
 		if(strand)
 		{
-			queryValue += "0 "+bufferCoord(start,false)+" "+bufferCoord(end)+" "+MAX_BOUNDS;
+			queryValue += "0,"+bufferCoord(start,false)+" TO "+bufferCoord(end)+","+MAX_BOUNDS + "]";
 		}
 		else
 		{
 			start *= -1;
 			end *= -1;
-			queryValue += NEG_BOUNDS+" "+bufferCoord(end,false)+" "+bufferCoord(start)+" 0";
+			queryValue += NEG_BOUNDS+","+bufferCoord(end,false)+" TO "+bufferCoord(start)+",0]";
 		}
-		queryValue += ")\"";
 		return queryValue;
 	}
 	
