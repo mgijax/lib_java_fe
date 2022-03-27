@@ -12,6 +12,7 @@ public class CreFields
     public static final String ALL_TYPE_SORT            	= "byAlleleType";
     public static final String ALL_SYSTEM_DETECTED         	= "alleleSystemDetected";
     public static final String ALL_SYSTEM_NOT_DETECTED     	= "alleleSystemNotDetected";
+    public static final String ALL_ALL_STRUCTURES		= "allStructures";
     public static final String ALL_EXCLUSIVE_STRUCTURES		= "exclusiveStructures";
     
     // Cre driver
