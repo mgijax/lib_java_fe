@@ -114,6 +114,42 @@ public class SolrLocationTranslator
 		return queryValue;
 	}
 	
+	public static String getIntersectsQueryValue(String chromosome, long startCoordinate, long endCoordinate, boolean strand)
+	{
+		if(!isChromosomeValid(chromosome)) return "";
+		
+		// make sure coords fall within chromosome offset
+		if(startCoordinate < 0) startCoordinate = 0;
+		else if(startCoordinate > CHROMOSOME_OFFSET) startCoordinate = CHROMOSOME_OFFSET;
+		if(endCoordinate < 0) endCoordinate = 0;
+		else if(endCoordinate > CHROMOSOME_OFFSET) endCoordinate = CHROMOSOME_OFFSET;
+		
+		// convert coordinates to the appropriate offset based on chromosome
+		long chrOffset = CHROMOSOME_OFFSET * getChromosomeIndex(chromosome);
+		long start = startCoordinate + chrOffset;
+		long end = endCoordinate + chrOffset;
+		
+		// make sure coords are within global bounds
+		if(startCoordinate >= MAX_BOUNDS || endCoordinate >= MAX_BOUNDS)
+		{
+			return "";
+		}
+		
+		String queryValue = "\"Intersects(";
+		if(strand)
+		{
+			queryValue += "0 "+bufferCoord(start,false)+" "+bufferCoord(end)+" "+MAX_BOUNDS;
+		}
+		else
+		{
+			start *= -1;
+			end *= -1;
+			queryValue += NEG_BOUNDS+" "+bufferCoord(end,false)+" "+bufferCoord(start)+" 0";
+		}
+		queryValue += ")\"";
+		return queryValue;
+	}
+	
 	// add a buffer to the coordinate for more accurate searches (per Solr spatial search docs)
 	private static String bufferCoord(long coord)
 	{
