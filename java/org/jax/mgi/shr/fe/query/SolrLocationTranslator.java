@@ -232,7 +232,59 @@ public class SolrLocationTranslator
 		}
 		return getQueryValue(chromosome,start,end,strand);
 	}
-	
+	public static String getIntersectsQueryValue(String queryString, String units)
+	{
+		if(queryString==null) return "";
+		int multiplier = 1;
+		if ((units != null) && ("Mbp".equalsIgnoreCase(units))) {
+			multiplier = 1000000;
+		}
+
+		String errorReturn = "";
+		queryString = queryString.toLowerCase();
+		queryString = queryString.replace("chr",""); // remove the optional "chr" text
+		if(queryString.equals("")) return "";
+		
+		// resolve strand
+		// assume +
+		boolean strand = true;
+		if(queryString.charAt(0)=='+' || queryString.charAt(0)=='-')
+		{
+			strand = queryString.charAt(0)=='+';
+			queryString = queryString.substring(1);
+		}
+		
+		//resolve chromosome
+		String[] pieces = queryString.split(":");
+		if(pieces.length<1 || pieces.length>2) return errorReturn;
+		String chrPiece = pieces[0];
+		//if(chrPiece.indexOf("chr")!=0) return errorReturn;
+		//String chromosome = chrPiece.substring(3);
+		String chromosome = chrPiece;
+		
+		// handle entire chromosome
+		if(pieces.length==1) return getIntersectsQueryValue(chromosome,0,CHROMOSOME_OFFSET-1,strand);
+		
+		//resolve coordinates
+		String coordPiece = pieces[1];
+		String[] coordPieces = coordPiece.split("-|\\.\\.");
+		if(coordPieces.length!=1 && coordPieces.length!=2) return errorReturn;
+		String coord1String = coordPieces[0];
+		// set coord2 = coord1 if only one coord is supplied
+		String coord2String = coord1String;
+		if(coordPieces.length==2) coord2String = coordPieces[1];
+		
+		long start,end;
+		try
+		{
+			start = Math.round((Double.parseDouble(coord1String) * multiplier));
+			end = Math.round((Double.parseDouble(coord2String) * multiplier));
+		}catch(NumberFormatException nfe)
+		{
+			return errorReturn;
+		}
+		return getIntersectsQueryValue(chromosome,start,end,strand);
+	}	
 	// ----- private functions ----------
 	
 	/*
