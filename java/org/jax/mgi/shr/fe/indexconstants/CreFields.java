@@ -17,7 +17,9 @@ public class CreFields
     
     // Cre driver
     public static final String DRIVER                       = "driver";
-    public static final String DRIVER_EXACT					= "driverExact";
+    public static final String DRIVER_SEARCH                = "driverSearch";
+    public static final String DRIVER_FACET                 = "driverFacet";
+    public static final String DRIVER_EXACT	       	    = "driverExact";
     public static final String DRIVER_DISPLAY               = "driverDisplay";
     public static final String DRIVER_SORT                  = "byDriver";
     public static final String ALL_REFERENCE_COUNT_SORT		= "byReferenceCount";
