@@ -14,15 +14,17 @@ public class GridMarker implements Serializable {
 	private String name;
 	private String featureType;
 	private Integer clusterKey;
+	private String title;
 	
 	public GridMarker() {}
 	
-	public GridMarker(String symbol, String primaryID, String name, String featureType, Integer clusterKey) {
+	public GridMarker(String symbol, String primaryID, String name, String featureType, Integer clusterKey, String title) {
 		this.symbol = symbol;
 		this.primaryID = primaryID;
 		this.name = name;
 		this.featureType = featureType;
 		this.clusterKey = clusterKey;
+		this.title = title;
 	}
 
 	public String getSymbol() {
@@ -30,6 +32,12 @@ public class GridMarker implements Serializable {
 	}
 	public void setSymbol(String symbol) {
 		this.symbol = symbol;
+	}
+	public String getTitle() {
+		return title;
+	}
+	public void setTitle(String title) {
+		this.title = title;
 	}
 	public String getPrimaryID() {
 		return primaryID;
