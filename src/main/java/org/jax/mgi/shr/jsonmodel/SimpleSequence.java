@@ -15,7 +15,7 @@ import lombok.ToString;
  */
 @Data @ToString @AllArgsConstructor @NoArgsConstructor
 public class SimpleSequence implements Serializable {
-	private int sequenceKey;
+	private Integer sequenceKey;
 	private String primaryID;
 	private String provider;
 	private String sequenceType;
