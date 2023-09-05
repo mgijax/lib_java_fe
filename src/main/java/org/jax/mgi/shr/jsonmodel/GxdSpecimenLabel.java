@@ -31,7 +31,7 @@ public class GxdSpecimenLabel {
 	@Override
 	public boolean equals(Object obj) {
 		GxdSpecimenLabel other = (GxdSpecimenLabel) obj;
-		
+
 		if (assayId == null) {
 			if (other.assayId != null)
 				return false;

@@ -10,8 +10,4 @@
 #
 ###########################################################################
 
-cd `dirname $0`
-
-. ./Configuration
-
-$ANT buildall
+mvn clean package install

@@ -8,3 +8,7 @@ fe.jar
 javadocs/
 Configuration
 *~
+/target/
+.classpath
+.project
+.settings
