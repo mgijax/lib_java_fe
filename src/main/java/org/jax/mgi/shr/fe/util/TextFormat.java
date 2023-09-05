@@ -13,9 +13,6 @@ public class TextFormat
      * @return String as 's', but with the noted replacement made.  returns
      *    null if 's' is null.  returns 's' if either 'start' or 'stop' is
      *    null.
-     * @assumes nothing
-     * @effects nothing
-     * @throws nothing
      */
     public static String superscript (String s, String start, String stop) {
 
