@@ -44,8 +44,8 @@ public class SolrLocationTranslator
 				"X","Y","XY","MT");
 		for(int i=0; i<validChrs.size(); i++)
 		{
-			VALID_CHROMOSOMES.put(validChrs.get(i),new Integer(i));
-			VALID_CHROMOSOMES.put(validChrs.get(i).toLowerCase(),new Integer(i));
+			VALID_CHROMOSOMES.put(validChrs.get(i), i);
+			VALID_CHROMOSOMES.put(validChrs.get(i).toLowerCase(), i);
 		}
 	}
 	

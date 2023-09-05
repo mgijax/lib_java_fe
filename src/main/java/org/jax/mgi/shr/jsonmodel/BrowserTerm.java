@@ -4,10 +4,16 @@ import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+import lombok.ToString;
+
 
 /* Is a vocabulary term with relevant details for display (parents, children, etc.).
  * Used by the shared vocabulary browser.
  */
+@Data @ToString @AllArgsConstructor @NoArgsConstructor
 public class BrowserTerm implements Serializable {
 	private BrowserID primaryID;
 	private List<BrowserID> secondaryIDs;
@@ -25,44 +31,6 @@ public class BrowserTerm implements Serializable {
 	private String dagName;
 	private boolean relatedToTissues;
 	
-	public BrowserTerm() {}
-
-	public List<BrowserParent> getAllParents() {
-		return allParents;
-	}
-
-	public Integer getAnnotationCount() {
-		return annotationCount;
-	}
-
-	public String getAnnotationLabel() {
-		return annotationLabel;
-	}
-
-	public String getAnnotationUrl() {
-		return annotationUrl;
-	}
-
-	public List<BrowserChild> getChildren() {
-		return children;
-	}
-
-	public String getComment() {
-		return comment;
-	}
-
-	public String getDagName() {
-		return dagName;
-	}
-
-	public BrowserParent getDefaultParent() {
-		return defaultParent;
-	}
-
-	public String getDefinition() {
-		return definition;
-	}
-
 	/* get the list of distinct synonyms, disregarding the synonym type
 	 */
 	public List<String> getDistinctSynonyms() {
@@ -73,7 +41,7 @@ public class BrowserTerm implements Serializable {
 		distinctSynonyms = new ArrayList<String>();
 		
 		if (this.synonyms != null) {
-			for (BrowserSynonym bs : this.getSynonyms()) {
+			for (BrowserSynonym bs : getSynonyms()) {
 				if (!distinctSynonyms.contains(bs.getSynonym())) {
 					distinctSynonyms.add(bs.getSynonym());
 				}
@@ -82,92 +50,4 @@ public class BrowserTerm implements Serializable {
 		return distinctSynonyms;
 	}
 
-	public BrowserID getPrimaryID() {
-		return primaryID;
-	}
-
-	public List<BrowserID> getSecondaryIDs() {
-		return secondaryIDs;
-	}
-
-	public List<BrowserSynonym> getSynonyms() {
-		return synonyms;
-	}
-
-	public String getTerm() {
-		return term;
-	}
-
-	public boolean isRelatedToTissues() {
-		return relatedToTissues;
-	}
-
-	public void setAllParents(List<BrowserParent> allParents) {
-		this.allParents = allParents;
-	}
-
-	public void setAnnotationCount(Integer annotationCount) {
-		this.annotationCount = annotationCount;
-	}
-
-	public void setAnnotationLabel(String annotationLabel) {
-		this.annotationLabel = annotationLabel;
-	}
-
-	public void setAnnotationUrl(String annotationUrl) {
-		this.annotationUrl = annotationUrl;
-	}
-
-	public void setChildren(List<BrowserChild> children) {
-		this.children = children;
-	}
-
-	public void setComment(String comment) {
-		this.comment = comment;
-	}
-
-	public void setDagName(String dagName) {
-		this.dagName = dagName;
-	}
-
-	public void setDefaultParent(BrowserParent defaultParent) {
-		this.defaultParent = defaultParent;
-	}
-
-	public void setDefinition(String definition) {
-		this.definition = definition;
-	}
-
-	public void setDistinctSynonyms(List<String> distinctSynonyms) {
-		// no op; we just compute them when needed
-		this.distinctSynonyms = distinctSynonyms;
-	}
-
-	public void setPrimaryID(BrowserID primaryID) {
-		this.primaryID = primaryID;
-	}
-
-	public void setRelatedToTissues(boolean relatedToTissues) {
-		this.relatedToTissues = relatedToTissues;
-	}
-
-	public void setSecondaryIDs(List<BrowserID> secondaryIDs) {
-		this.secondaryIDs = secondaryIDs;
-	}
-
-	public void setSynonyms(List<BrowserSynonym> synonyms) {
-		this.synonyms = synonyms;
-	}
-	
-	public void setTerm(String term) {
-		this.term = term;
-	}
-	
-	@Override
-	public String toString() {
-		return "BrowserTerm [primaryID=" + primaryID + ", secondaryIDs=" + secondaryIDs + ", term=" + term
-				+ ", synonyms=" + synonyms + ", definition=" + definition + ", defaultParent=" + defaultParent
-				+ ", allParents=" + allParents + ", children=" + children + ", annotationCount=" + annotationCount
-				+ ", annotationLabel=" + annotationLabel + ", annotationUrl=" + annotationUrl + "]";
-	}
 }
