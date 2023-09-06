@@ -696,6 +696,7 @@ public class Stemmer {
 							break;
 						System.out.print((char) ch);
 					}
+					in.close();
 				} catch (IOException e) {
 					System.out.println("error reading " + args[i]);
 					break;
