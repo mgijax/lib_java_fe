@@ -39,6 +39,7 @@ public class GxdHtFields
 	public static String NAME = "name";
 	public static String ORGANISM = "organism";
 	public static String MUTANT_ALLELES = "mutantAlleles";
+	public static String MUTANT_ALLELE_IDS = "mutantAlleleIds";
 	public static String GENETIC_BACKGROUND = "geneticBackground";
 	public static String STRUCTURE_SEARCH = "structureSearch";
 	public static String MUTATED_GENE = "mutatedGene";
