@@ -141,6 +141,7 @@ public class IndexConstants {
 
 	// Counts
 	public static final String GO_ANNOT_COUNT		= "goAnnotationCount";
+        public static final String DO_MODEL_COUNT               = "doModelCount";
 	public static final String PRB_COUNT			= "probe_count";
 	public static final String MRK_COUNT			= "marker_count";
 	public static final String ALL_COUNT			= "alleleCount";
