@@ -10,4 +10,4 @@
 #
 ###########################################################################
 
-mvn clean package install
+mvn -Dmaven.repo.local=${MAVEN_REPO_LOCAL} clean package install
