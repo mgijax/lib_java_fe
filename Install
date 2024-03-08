@@ -10,4 +10,8 @@
 #
 ###########################################################################
 
+cd `dirname $0`
+
+. ./Configuration
+
 mvn -Dmaven.repo.local=${MAVEN_REPO_LOCAL} clean package install
