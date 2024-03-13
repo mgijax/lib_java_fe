@@ -14,4 +14,8 @@ cd `dirname $0`
 
 . ./Configuration
 
+if [ ! -e "${MAVEN_REPO_LOCAL}" ] ; then
+  echo "MAVEN_REPO_LOCAL is not defined or does not exist."
+  exit 1
+fi
 mvn -Dmaven.repo.local=${MAVEN_REPO_LOCAL} clean package install
