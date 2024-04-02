@@ -17,6 +17,6 @@ public class MolecularProbeMarker implements Serializable {
 	
 	private String symbol;
 	private String primaryID;
-	private boolean isPutative = false;
+	private boolean putative = false;
 	private String location;
 }

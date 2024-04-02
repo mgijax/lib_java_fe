@@ -17,6 +17,6 @@ public class CloneMarker implements Serializable {
 	
 	private String symbol;
 	private String primaryID;
-	private boolean isPutative = false;
+	private boolean putative = false;
 
 }
