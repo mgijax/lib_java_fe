@@ -294,9 +294,9 @@ public class IndexConstants {
 	public static final String SNP_VARIATIONCLASS = "varclass";
 	public static final String SNP_FUNCTIONCLASS = "fxn";
 	public static final String SNP_MARKERID = "marker_accid";
-	public static final String SNP_STRAINS = "strains.keyword";
-	public static final String SNP_SAME_STRAINS = "samestrains.keyword";
-	public static final String SNP_DIFF_STRAINS = "diffstrains.keyword";
+	public static final String SNP_STRAINS = "strains";
+	public static final String SNP_SAME_STRAINS = "samestrains";
+	public static final String SNP_DIFF_STRAINS = "diffstrains";
 	public static final String SNP_JSONSTRING = "objectJSONData";
 	
 	// strain constants
