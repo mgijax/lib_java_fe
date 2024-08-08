@@ -79,6 +79,7 @@ public class IndexConstants {
 	public static final String REF_JOURNAL_FACET					= "journalFacet";
 	public static final String REF_TITLE							= "title";
 	public static final String REF_YEAR								= "year";
+	public static final String REF_JNUM								= "jnum";
 	public static final String REF_ABSTRACT						= "abstract";
 	public static final String REF_ISSUE							= "issue";
 	public static final String REF_VOLUME							= "volume";
