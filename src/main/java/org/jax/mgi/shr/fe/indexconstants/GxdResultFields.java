@@ -107,6 +107,17 @@ public class GxdResultFields
     public static final String DIFF_EXCLUSIVE_STRUCTURES = "exclusiveStructures";
     public static final String DIFF_EXCLUSIVE_STAGES = "exclusiveStages";
 
+    // profile fields
+    public static final String PROF_POS_C_EXACT = "posCExact";
+    public static final String PROF_POS_C_ANC = "posCAnc";
+    public static final String PROF_POS_R_EXACT = "posRExact";
+    public static final String PROF_POS_R_ANC = "posRAnc";
+
+    public static final String PROF_POS_C_EXACT_A = "posCExactA";
+    public static final String PROF_POS_C_ANC_A = "posCAncA";
+    public static final String PROF_POS_R_EXACT_A = "posRExactA";
+    public static final String PROF_POS_R_ANC_A = "posRAncA";
+
     // Matrix group fields
     public static final String STAGE_MATRIX_GROUP = "stageMatrixGroup";
     public static final String GENE_MATRIX_GROUP = "geneMatrixGroup";
