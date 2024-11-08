@@ -220,6 +220,12 @@ public class IndexConstants {
 	public static final String STRUCTUREAC_END_STAGE = "endStage";
 	public static final String STRUCTUREAC_CROSSREF = "crossRef";
 
+	public static final String STRUCTUREAC_SHOW_IN_CPOS = "showInCPosAC";
+	public static final String STRUCTUREAC_SHOW_IN_CNEG = "showInCNegAC";
+	public static final String STRUCTUREAC_SHOW_IN_RPOS = "showInRPosAC";
+	public static final String STRUCTUREAC_SHOW_IN_RNEG = "showInRNegAC";
+
+
 	// Vocab Term Auto Complete Fields
 	public static final String VOCABAC_KEY = "uniqueKey";
 	public static final String VOCABAC_TERM_KEY = "termKey";
