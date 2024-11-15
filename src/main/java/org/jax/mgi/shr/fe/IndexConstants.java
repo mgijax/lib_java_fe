@@ -225,6 +225,11 @@ public class IndexConstants {
 	public static final String STRUCTUREAC_SHOW_IN_RPOS = "showInRPosAC";
 	public static final String STRUCTUREAC_SHOW_IN_RNEG = "showInRNegAC";
 
+	public static final String STRUCTUREAC_STAGES_CPOS = "stagesCPosAC";
+	public static final String STRUCTUREAC_STAGES_CNEG = "stagesCNegAC";
+	public static final String STRUCTUREAC_STAGES_RPOS = "stagesRPosAC";
+	public static final String STRUCTUREAC_STAGES_RNEG = "stagesRNegAC";
+
 
 	// Vocab Term Auto Complete Fields
 	public static final String VOCABAC_KEY = "uniqueKey";
