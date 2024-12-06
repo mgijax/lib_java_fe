@@ -99,14 +99,6 @@ public class GxdResultFields
     public static final String PROBE_KEY = "probeKey";
     public static final String ANTIBODY_KEY = "antibodyKey";
 
-    // differential fields
-    public static final String DIFF_POS_ANCESTORS = "posAnc";
-    public static final String DIFF_EXC_ANCESTORS = "excAnc";
-    public static final String DIFF_EXC_ANCESTORS_ALL_STAGES = "excAncAllStages";
-    public static final String DIFF_NEG_DESCENDANTS = "negDec";
-    public static final String DIFF_EXCLUSIVE_STRUCTURES = "exclusiveStructures";
-    public static final String DIFF_EXCLUSIVE_STAGES = "exclusiveStages";
-
     // profile fields
     public static final String PROF_POS_C_EXACT = "posCExact";
     public static final String PROF_POS_C_ANC = "posCAnc";
