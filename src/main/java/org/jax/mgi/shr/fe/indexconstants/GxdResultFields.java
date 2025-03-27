@@ -23,6 +23,7 @@ public class GxdResultFields
     public static final String IS_WILD_TYPE = "isWildType";
     public static final String ALLELE_ID = "alleleId";
     public static final String CONSOLIDATED_SAMPLE_KEY = "consolidatedSampleKey";
+    public static final String BIOREPLICATE_COUNT = "bioreplicateCount";
 
     //result centric summary fields
     public static final String ASSAY_MGIID = "assayMgiid";
