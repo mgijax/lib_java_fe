@@ -37,6 +37,7 @@ public class GxdHtFields
 	public static String AGE_MAX = "ageMax";
 	public static String SEX = "sex";
 	public static String NAME = "name";
+	public static String RNASEQ_TYPE = "rnaseqType";
 	public static String ORGANISM = "organism";
 	public static String MUTANT_ALLELES = "mutantAlleles";
 	public static String MUTANT_ALLELE_IDS = "mutantAlleleIds";
