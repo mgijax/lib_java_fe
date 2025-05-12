@@ -93,6 +93,7 @@ public class GxdResultFields
     public static final String GO_HEADERS_BP = "goHeadersBP";
     public static final String GO_HEADERS_MF = "goHeadersMF";
     public static final String DO_HEADERS = "doHeaders";
+    public static final String CO_HEADERS = "coHeaders";
     public static final String FEATURE_TYPES = "featureTypes";
     public static final String AGES = "ages";
     
