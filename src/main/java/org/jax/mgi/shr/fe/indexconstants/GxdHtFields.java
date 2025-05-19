@@ -11,6 +11,7 @@ public class GxdHtFields
 	public static String ARRAYEXPRESS_ID = "arrayExpressID";
 	public static String GEO_ID = "geoID";
 	public static String METHOD = "method";
+	public static String METHODS = "methods";
 	public static String TITLE = "title";
 	public static String DESCRIPTION = "description";
 	public static String SAMPLE_COUNT = "sampleCount";
@@ -37,7 +38,6 @@ public class GxdHtFields
 	public static String AGE_MAX = "ageMax";
 	public static String SEX = "sex";
 	public static String NAME = "name";
-	public static String RNASEQ_TYPE = "rnaseqType";
 	public static String ORGANISM = "organism";
 	public static String MUTANT_ALLELES = "mutantAlleles";
 	public static String MUTANT_ALLELE_IDS = "mutantAlleleIds";
