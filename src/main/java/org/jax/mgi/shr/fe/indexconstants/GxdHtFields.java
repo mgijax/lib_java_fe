@@ -33,6 +33,8 @@ public class GxdHtFields
 	public static String THEILER_STAGE = "theilerStage";
 	public static String CELLTYPE_TERM = "celltypeTerm";
 	public static String CELLTYPE_ID = "celltypeID";
+	public static String CT_SEARCH_IDS = "ctSearchIDs";
+	public static String CT_SEARCH_TERMS = "ctSearchTerms";
 	public static String AGE = "age";
 	public static String AGE_MIN = "ageMin";
 	public static String AGE_MAX = "ageMax";
