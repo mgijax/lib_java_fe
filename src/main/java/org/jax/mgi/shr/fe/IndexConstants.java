@@ -128,6 +128,7 @@ public class IndexConstants {
 	public static final String GXD_THEILER_STAGE_FACET = "theilerStage";
 	public static final String GXD_MARKER_TYPE_FACET = "featureTypes";
 	public static final String GXD_MP_FACET = "mpHeaders";
+	public static final String GXD_CO_FACET = "coHeaders";
 	public static final String GXD_DO_FACET = "doHeaders";
 	public static final String GXD_GO_FACET = "goHeaders";
 	public static final String GXD_TMPLEVEL_FACET = "tpmLevel";
