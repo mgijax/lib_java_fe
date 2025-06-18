@@ -21,4 +21,5 @@ public class BrowserChild implements Serializable {
 	private Integer annotationCount;
 	private String annotationLabel;
 	private String annotationUrl;
+	private String hasNoAnnotations;
 }

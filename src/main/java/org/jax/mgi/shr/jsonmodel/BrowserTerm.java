@@ -27,6 +27,7 @@ public class BrowserTerm implements Serializable {
 	private Integer annotationCount;
 	private String annotationLabel;
 	private String annotationUrl;
+	private String hasNoAnnotations;
 	private String comment;
 	private String dagName;
 	private boolean relatedToTissues;
