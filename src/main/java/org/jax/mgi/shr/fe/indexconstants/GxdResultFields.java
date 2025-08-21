@@ -35,6 +35,7 @@ public class GxdResultFields
     public static final String FIGURE_PLAIN = "figurePlain";
     public static final String GENOTYPE = "genotype";
     public static final String JNUM = "jNum";
+    public static final String JNUMS = "jNums";
     public static final String PUBMED_ID = "pubmedId";
     public static final String SHORT_CITATION = "shortCitation";
     public static final String PATTERN = "pattern";
