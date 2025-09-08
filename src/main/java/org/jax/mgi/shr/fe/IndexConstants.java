@@ -154,6 +154,7 @@ public class IndexConstants {
 	public static final String GXD_RESULT_COUNT	= "gxdResultCount";
 	public static final String GXD_STRUCT_COUNT	= "gxdStructureCount";
 	public static final String GXD_ASSAY_COUNT	= "gxdAssayCount";
+	public static final String GXD_HTEXP_COUNT	= "gxdHtExpCount";
 
 	// Vocabulary
 	public static final String VOC_TERM				= "vocTerm";
