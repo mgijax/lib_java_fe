@@ -41,6 +41,11 @@ public class CreFields
     public static final String ANNOTATED_STRUCTURE			= "annotatedStructure";
     public static final String ANNOTATED_STRUCTURE_KEY		= "annotatedStructureKey";
     public static final String STRUCTURE_ID					= "structureId";
+    public static final String ANNOTATED_CELL_TYPE			= "annotatedCellType";
+    public static final String ANNOTATED_CELL_TYPE_KEY		= "annotatedCellTypeKey";
+    public static final String ALL_CELL_TYPES			= "allCellTypes";
+    public static final String ALL_CELL_TYPES_DIRECT		= "allCellTypesDirect";
+
     
 
     // Cre sorting (column names)
