@@ -33,6 +33,7 @@ public class CreFields
     // system level highlight group key
     public static final String SYSTEM_HL_GROUP				= "systemHlGroup";
     
+    public static final String CELL_TYPE_HL_GROUP				= "cellTypeHlGroup";
     
     //Cre structures
     public static final String DETECTED						= "detected";
@@ -42,9 +43,9 @@ public class CreFields
     public static final String ANNOTATED_STRUCTURE_KEY		= "annotatedStructureKey";
     public static final String STRUCTURE_ID					= "structureId";
     public static final String ANNOTATED_CELL_TYPE			= "annotatedCellType";
-    public static final String ANNOTATED_CELL_TYPE_KEY		= "annotatedCellTypeKey";
+    public static final String CELL_TYPE_SEARCH			= "cellTypeSearch";
+    public static final String CELL_TYPE_HEADERS		= "cellTypeHeaders";
     public static final String ALL_CELL_TYPES			= "allCellTypes";
-    public static final String ALL_CELL_TYPES_DIRECT		= "allCellTypesDirect";
 
     
 
