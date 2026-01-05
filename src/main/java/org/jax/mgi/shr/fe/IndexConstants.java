@@ -341,6 +341,16 @@ public class IndexConstants {
 	public static final String PRB_BY_NAME = "byName";
 	public static final String PRB_PROBE = "probe";
 	
+	// antibodies
+	public static final String ANTIBODY_KEY = "antibodyKey";
+	public static final String ANTIBODY_TYPE = "type";
+	public static final String ANTIBODY_REFERENCE_ID = "referenceID";
+	public static final String ANTIBODY_REFERENCE_COUNT = "referenceCount";
+	public static final String ANTIBODY_MARKER_ID = "markerID";
+	public static final String ANTIBODY_BY_TYPE = "byType";
+	public static final String ANTIBODY_BY_NAME = "byName";
+	public static final String ANTIBODY_JSON = "antibody";
+	
 	// genetic mapping experiments; also uses MRK_ID and BY_DEFAULT
 	public static final String MLD_EXPERIMENT_KEY = "experimentKey";
 	public static final String MLD_EXPERIMENT = "experiment";
