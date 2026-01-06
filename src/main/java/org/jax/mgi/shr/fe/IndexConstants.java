@@ -145,6 +145,7 @@ public class IndexConstants {
 	public static final String GO_ANNOT_COUNT		= "goAnnotationCount";
         public static final String DO_MODEL_COUNT               = "doModelCount";
 	public static final String PRB_COUNT			= "probe_count";
+	public static final String ANTIBODY_COUNT			= "antibody_count";
 	public static final String MRK_COUNT			= "marker_count";
 	public static final String ALL_COUNT			= "alleleCount";
 	public static final String SEQ_COUNT			= "sequenceCount";
