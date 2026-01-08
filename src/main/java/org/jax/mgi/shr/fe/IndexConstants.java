@@ -348,8 +348,9 @@ public class IndexConstants {
 	public static final String ANTIBODY_REFERENCE_ID = "referenceID";
 	public static final String ANTIBODY_REFERENCE_COUNT = "referenceCount";
 	public static final String ANTIBODY_MARKER_ID = "markerID";
-	public static final String ANTIBODY_BY_TYPE = "byType";
 	public static final String ANTIBODY_BY_NAME = "byName";
+	public static final String ANTIBODY_BY_GENE = "byGene";
+	public static final String ANTIBODY_BY_REF_COUNT = "byRefCount";
 	public static final String ANTIBODY_JSON = "antibody";
 	
 	// genetic mapping experiments; also uses MRK_ID and BY_DEFAULT
