@@ -124,6 +124,7 @@ public class IndexConstants {
 	public static final String GXD_SYSTEM_FACET = "anatomicalSystem";
 	public static final String GXD_ASSAY_TYPE_FACET = "assayType";
 	public static final String GXD_WILDTYPE_FACET = "isWildType";
+	public static final String GXD_SEX_FACET = "sex";
 	public static final String GXD_DETECTED_FACET = "detectionLevel";
 	public static final String GXD_THEILER_STAGE_FACET = "theilerStage";
 	public static final String GXD_MARKER_TYPE_FACET = "featureTypes";
