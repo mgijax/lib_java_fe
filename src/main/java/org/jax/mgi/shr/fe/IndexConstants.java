@@ -393,6 +393,7 @@ public class IndexConstants {
 	public static final String QS_SYMBOL = "symbol";
 	public static final String QS_NAME = "name";
 	public static final String QS_FEATURE_TYPE = "featureType";
+	public static final String QS_ALLELE_TYPE = "featureType"; // not a mistake, unforunately
 	public static final String QS_IS_MARKER = "isMarker";
 	public static final String QS_CHROMOSOME = "chromosome";
 	public static final String QS_LOCATION = "location";
