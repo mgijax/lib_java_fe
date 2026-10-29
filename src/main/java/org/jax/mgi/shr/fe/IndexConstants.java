@@ -18,6 +18,8 @@ public class IndexConstants {
 	public static final String MRK_SYMBOL				= "markerSymbol";
 	public static final String MRK_NAME					= "markerName";
 	public static final String MRK_TYPE					= "markerType";
+        public static final String MRK_TYPE_SORT                                     = "markerTypeSort";
+
 	public static final String MRK_STATUS				= "markerStatus";
 	public static final String MRK_ORGANISM				= "markerOrganism";
 	public static final String MRK_ID					= "markerID";
