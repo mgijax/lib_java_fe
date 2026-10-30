@@ -40,6 +40,7 @@ public class MarkerSummaryFields {
 	
 	// query fields unique to marker summary
 	public static final String FEATURE_TYPE = "featureType";
+	public static final String FEATURE_TYPE_SORT = "featureTypeSort";
 	public static final String FEATURE_TYPE_KEY = "featureTypeKey"; // the mcv key for marker features
 	public static final String GO_PROCESS_TERM = "goProcessTerm";
 	public static final String GO_FUNCTION_TERM = "goFunctionTerm";
